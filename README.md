@@ -47,5 +47,5 @@
 
 ## 쁘디몽드
 ### [쁘디몽드](http://kidpetitmonde.co.kr)
-### [쁘디몽드](http://kidpetitmonde.co.kr/mb)
+### [쁘디몽드모바일](http://kidpetitmonde.co.kr/mb)
 
