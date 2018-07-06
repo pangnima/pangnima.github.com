@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/> <!-- 엣지 번호 링크 막기-->
+    <title>핫라인</title>
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sub.css">
+</head>
+<body>
+    <!-- PC header -->
+    <header class="pcheader">
+        <div class="headerWrap clearfix">
+            <h1><a href="../index.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            <nav class="pcMenu">
+                <ul class="gnb clearfix">
+                    <li>
+                        <hr class="line">
+                        <a href="./companyIntro.html">회사소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./companyIntro.html">회사소개</a></li>
+                            <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                            <li><a href="./companyVision.html">비전 및 핵심가치</a></li>
+                            <li><a href="./companyCi.html">CI 소개</a></li>
+                            <!-- <li><a href="./companyHistory.html">연혁</a></li> -->
+                            <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                            <li><a href="./companyPartners.html">관계사 / 해외지사</a></li>
+                            <li><a href="./companyMap.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./businessModel.html">사업소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./businessModel.html">비즈니스모델</a></li>
+                            <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                            <li><a href="./goodssourcing.html">해외 소싱 네트워크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./personnelSystem.html">인재채용</a>
+                        <ul class="subMenu">
+                            <li><a href="./personnelSystem.html">인사제도</a></li>
+                            <li><a href="./personnelStep.html">채용문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./managementSystem.html">윤리경영</a>
+                        <ul class="subMenu">
+                            <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                            <li><a href="./managementHotline.html">핫라인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./deliveryPartner.html">납품안내</a>
+                        <ul class="subMenu">
+                            <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                            <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                            <li><a href="./deliveryIntro.html">절차소개</a></li>
+                            <li><a href="./deliveryhire.html">납품제안</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./customerNotice.html">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="./customerNotice.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="language">
+                <li class="on"><a href="#">KOR</a></li>
+                <li>|</li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </div>
+        <div class="blind"></div>
+    </header>
+
+    <!-- MB header -->
+    <header class="mbheader">
+        <div class="headerWrap clearfix">
+            <h1>
+                <a href="../index.html"><img src="../images/mb/logo.png" alt="로고"></a>
+            </h1>
+            <img class='mobileMenuBtn' src="../images/mb/menuIcon.png" alt="모바일메뉴버튼">
+        </div>
+            
+        <nav class="mbMenu">
+            <ul class="mblanguage clearfix">
+                <li class="on">KOREA</li>
+                <li>ENGLISH</li>
+            </ul>
+            <ul class="mbMenuList">
+                <li>
+                    회사소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./companyIntro.html">회사소개</a></li>
+                        <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                        <li><a href="./companyVision.html">비전 및 핵심가치</a></li>
+                        <li><a href="./companyCi.html">CI 소개</a></li>
+                        <!-- <li><a href="./companyHistory.html">연혁</a></li> -->
+                        <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                        <li><a href="./companyPartners.html">관계사/해외지사</a></li>
+                        <li><a href="./companyMap.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    사업소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./businessModel.html">비즈니스모델</a></li>
+                        <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                        <li><a href="./goodssourcing.html">해외 소싱 네트워크</a></li>
+                    </ul>
+                </li>
+                <li>
+                    인재채용<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./personnelSystem.html">인사제도</a></li>
+                        <li><a href="./personnelStep.html">채용문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    윤리경영<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                        <li><a href="./managementHotline.html">핫라인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    납품안내<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                        <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                        <li><a href="./deliveryIntro.html">절차소개</a></li>
+                        <li><a href="./deliveryhire.html">납품제안</a></li>
+                    </ul>
+                </li>
+                <li>
+                    고객센터<img src="../images/mb/upImg.png" alt="">
+                    <ul class="subMenu">
+                        <li><a href="./customerNotice.html">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 서브네비게이션 -->
+    <section class="subVisualWrap management">
+        <div class="subVisual">
+            <div class="visualTitle">
+                <h2>핫라인</h2>
+                <hr>
+                <p>윤리경영의 실천을 통해 건전한 기업문화 조성을 위해 노력하고 있습니다</p>
+            </div>
+        </div>
+        <div class="subNavi">
+            <div class="subNaviWrap">
+                <ul class="clearfix">
+                    <li>  
+                        <a href="managementSystem.html">윤리경영 <span>▼</span></a>
+                        <ul>
+                            <li><a href="companyIntro.html">회사소개</a></li>
+                            <li><a href="businessModel.html">사업소개</a></li>
+                            <li><a href="personnelSystem.html">인재채용</a></li>
+                            <!-- <li><a href="managementSystem.html">윤리경영</a></li> -->
+                            <li><a href="deliveryPartner.html">납품안내</a></li>
+                            <li><a href="customerNotice.html">고객센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">핫라인 <span>▼</span></a>
+                        <ul>
+                            <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                            <!-- <li><a href="./managementHotline.html">핫라인</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 컨텐츠 -->
+    <section>
+        <div class="contentsTitleBox">
+            <h2>핫라인</h2>
+            <hr>
+            <p>(주)아성 및 관련 임직원의 비윤리행위/부당행위를 알게 된 경우<br/>제보하여 주시면 해당 사실을 면밀히 조사하여 즉각 개선하도록 하겠습니다.</p>
+        </div>
+        <div class="contentsWrap hotLine">
+            <div class="contents">
+                <ul class="hotLineList clearfix">
+                    <li>
+                        <div>
+                            <div>
+                                <h3>윤리위원회</h3>
+                                <hr class="blueLine">
+                                <p>㈜아성 회장님을 위원장<br/>윤리경영 정책 및 방향성 결정</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>그룹 윤리사무국</h3>
+                                <hr class="blueLine">
+                                <p>경영기획실에서 담당<br/>윤리규범/실천지침 제정 및 보완<br/>윤리경영 핫라인 운영<br/>/ 윤리경영홈페이지 운영</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div>
+                                <h3>각 사 윤리 사무국</h3>
+                                <hr class="blueLine">
+                                <p>각 사별 총무팀에서 담당<br/>선물, 향응접대신고제도 운영</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="hotLineReport clearfix">
+                    <li>
+                        <div>
+                            <h3>비윤리행위 신고</h3>
+                            <hr class="blueLine">
+                            <p>㈜아성HMP 임직원의 금품, 향응수수 등<br/>비위사실 제보/신고</p>
+                            <a href="#" class="blueBtn reportBtn">신고하기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>직장 내 부당행위 신고</h3>
+                            <hr class="blueLine">
+                            <p>직장 내 부당강요행위나 성희롱 등<br/>비위사실 제보/신고<br/></p>
+                            <a href="#" class="blueBtn reportBtn">신고하기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ci -->
+    <section class="ciBox">
+        <ul>
+            <li><img src="../images/ci_image_01.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_02.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_03.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_04.png" alt=""></li>
+        </ul>
+    </section>
+
+    <!-- ci -->
+    <section class="ciBox mb">
+        <ul class="clearfix">
+            <li><img src="../images/ci_image_01.png" alt=""></li>
+            <li><img src="../images/ci_image_02.png" alt=""></li>
+            <li><img src="../images/ci_image_03.png" alt=""></li>
+        </ul>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerWrap">
+            <h1><img src="../images/foot_logo.png" alt="하단로고"></h1>
+            <div class="footinfoTable clearfix">
+                <h3>㈜아성</h3>
+                <ul>
+                    <li><strong>대표이사</strong> : 박영주</li>
+                    <li><strong>주소</strong> : 서울 강남구 남부순환로 2748 (도곡동)</li>
+                </ul>
+                <ul>
+                    <li><strong>TEL</strong> : 02-405-0731</li>
+                    <li><strong>FAX</strong> : 02-405-0701</li>
+                </ul>
+            </div>
+            
+            <div class="copyright">
+                Copyright ⓒ 2018 ASUNG CO., LTD. ALL RIGHTS RESERVED
+            </div>
+        </div>
+
+        <div class="mbfooterWrap">
+            <a href="#" class="topBtn">▲ TOP</a>
+            <ul>
+                <li><strong>㈜아성  주소</strong>: 서울 강남구 남부순환로 2748</li>
+                <li><strong>대표이사 </strong>: 박영주</li>
+                <li><strong>TEL </strong>: 02-579-0411 <strong>FAX </strong>: 02-579-0415</li>
+            </ul>
+            <div class="copyright">
+                Copyright ⓒ 2018 ASUNG CO., LTD. ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- popup -->
+    <div class="hotpop">
+        <div class="wrap">
+            <img class='closeBtn' src="../images/sub/closeBtn.png" alt="닫기">
+            <div class="selectorBox">
+                <ul class="clearfix">
+                    <li class="on">실명제보</li>
+                    <li>익명제보</li>
+                </ul>
+            </div>
+            
+            <div class="realName reportBox on">
+                <div class="tableStyle">
+                    <h3>1. 제보 대상자</h3>
+                    <ul class="clearfix">
+                        <li class="half">
+                            <input type="text" placeholder="제보 대상자 소속회사">
+                        </li>
+                        <li class="half">
+                            <input type="text" placeholder="관련사업부문">
+                        </li>   
+                        <li class="short">
+                            <input type="text" placeholder="제보 대상자">
+                        </li>
+                        <li class="long">
+                            <span>대상 유형</span>
+                            <div class="box">
+                                <div class="checks">
+                                    <input type="radio" id="operation" name="operation"> 
+                                    <label for="operation">직원</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="vender" name="operation"> 
+                                    <label for="vender">부서</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="vender2" name="operation"> 
+                                    <label for="vender2">임원</label> 
+                                </div>
+                            </div>
+                            <input type="text" class="short" placeholder="부서업무">
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="tableStyle">
+                    <h3>2. 제보자</h3>
+                    <ul class="clearfix">
+                        <li class="half">
+                            <input type="text" placeholder="성명">
+                        </li>
+                        <li class="half">
+                            <input type="text" placeholder="이메일">
+                        </li>   
+                        <li class="half">
+                            <input type="text" placeholder="부서/업무">
+                        </li>
+                        <li class="half">
+                            <input type="text" placeholder="전화번호">
+                        </li>
+                        <li>
+                            <span>회신방법</span>
+                            <div class="box">
+                                <div class="checks">
+                                    <input type="radio" id="email" name="operation2"> 
+                                    <label for="email">이메일</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="sms" name="operation2"> 
+                                    <label for="sms">SMS</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="noreturn" name="operation2"> 
+                                    <label for="noreturn">회신불필요</label> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="tableStyle plus">
+                    <h3>3. 제보내용</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <span>제목</span>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <span>내용</span>
+                            <div>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </li>
+                        <li>
+                            <span>첨부파일</span>
+                            <div>
+                                <div class="fileBtnBox grayBtn">
+                                    <input type="file" id="upload" readonly="readonly">
+                                    <label for="upload">첨부파일</label>
+                                </div>
+                                <!-- <a href="#" class="grayBtn">첨부파일</a> -->
+                                <p><img src="../images/sub/uploadImg.png" alt=""> 이미지.jpg <span>1.2MB <span>X</span></span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>소속회사와의 관계</span>
+                            <div class="box">
+                                <div class="checks">
+                                    <input type="radio" id="relation_1" name="operation3"> 
+                                    <label for="relation_1">임직원</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="relation_2" name="operation3"> 
+                                    <label for="relation_2">협력업체</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="relation_3" name="operation3"> 
+                                    <label for="relation_3">고객</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="relation_4" name="operation3"> 
+                                    <label for="relation_4">기타</label> 
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>개인정보 수집 및 이용동의</span>
+                            <div>
+                                <textarea name="" id="" cols="30" rows="10" class="chText">
+개인정보 수집 및 이용 동의(필수) 
+
+• - 처리목적 : 윤리사무국 제보 및 조사, 결과통보
+• - 처리(수집) 항목 : 이름, 이메일주소, 전화번호, 소속회사
+• - 보유기간 : 목적 달성 시 
+
+상기의 개인정보 수집 및 이용을 거부하실 수 있으나 거부하시는 경우 서비스 이용이 불가합니다                             
+                                </textarea>
+                                <div class="chBox">
+                                    <input type="checkbox" id="hotline">
+                                    <label for="hotline">개인정보 수집, 이용에 동의합니다.</label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 실명제보 끝 -->
+
+            <!-- 익명제보  -->
+            <div class="anonymous reportBox">
+                <div class="tableStyle">
+                    <h3>1. 제보 대상자</h3>
+                    <ul class="clearfix">
+                        <li class="half">
+                            <input type="text" placeholder="제보 대상자 소속회사">
+                        </li>
+                        <li class="half">
+                            <input type="text" placeholder="관련사업부문">
+                        </li>   
+                        <li class="short">
+                            <input type="text" placeholder="제보 대상자">
+                        </li>
+                        <li class="long">
+                            <span>대상 유형</span>
+                            <div class="box">
+                                <div class="checks">
+                                    <input type="radio" id="anonymous_typ1_1" name="operation4"> 
+                                    <label for="anonymous_typ1_1">직원</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="anonymous_typ1_2" name="operation4"> 
+                                    <label for="anonymous_typ1_2">부서</label> 
+                                </div>
+                                <div class="checks">
+                                    <input type="radio" id="anonymous_typ1_3" name="operation4"> 
+                                    <label for="anonymous_typ1_3">임원</label> 
+                                </div>
+                            </div>
+                            <input type="text" class="short" placeholder="부서업무">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tableStyle plus">
+                    <h3>2. 제보자</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <span>아이디</span>
+                            <input type="text">
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="tableStyle plus">
+                        <h3>3. 제보내용</h3>
+                        <ul class="clearfix">
+                            <li>
+                                <span>제목</span>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <span>내용</span>
+                                <div>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </li>
+                            <li>
+                                <span>첨부파일</span>
+                                <div>
+                                    <a href="#" class="grayBtn">첨부파일</a>
+                                    <p><img src="../images/sub/uploadImg.png" alt=""> 이미지.jpg <span>1.2MB <span>X</span></span></p>
+                                </div>
+                            </li>
+                            <li>
+                                <span>소속회사와의 관계</span>
+                                <div class="box">
+                                    <div class="checks">
+                                        <input type="radio" id="anonymous_typ1_4" name="operation3"> 
+                                        <label for="anonymous_typ1_4">임직원</label> 
+                                    </div>
+                                    <div class="checks">
+                                        <input type="radio" id="anonymous_typ1_5" name="operation3"> 
+                                        <label for="anonymous_typ1_5">협력업체</label> 
+                                    </div>
+                                    <div class="checks">
+                                        <input type="radio" id="anonymous_typ1_6" name="operation3"> 
+                                        <label for="anonymous_typ1_6">고객</label> 
+                                    </div>
+                                    <div class="checks">
+                                        <input type="radio" id="anonymous_typ1_7" name="operation3"> 
+                                        <label for="anonymous_typ1_7">기타</label> 
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="buttonBox textCenter">
+                    <a href="#" class="blueBtn hotLineBtn">제보하기</a>
+                </div>
+            </div>
+            <!-- 익명제보 끝 -->
+
+        </div>
+    </div>
+</body>
+</html>

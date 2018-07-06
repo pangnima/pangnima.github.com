@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/> <!-- 엣지 번호 링크 막기-->
+    <title>CEO 인사말</title>
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sub.css">
+</head>
+<body>
+     <!-- PC header -->
+     <header class="pcheader">
+        <div class="headerWrap clearfix">
+            <h1><img src="../images/logo.png" alt="로고"></h1>
+            <nav class="pcMenu">
+                <ul class="gnb clearfix">
+                    <li>
+                        <hr class="line">
+                        <a href="./companyCeo.html">회사소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                            <li><a href="./companyGoal.html">비전 및 목표</a></li>
+                            <li><a href="./companyCi.html">CI 소개</a></li>
+                            <li><a href="./companyHistory.html">연혁</a></li>
+                            <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                            <li><a href="./companyPartners.html">관계사 / 해외지사</a></li>
+                            <li><a href="./companyMap.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./businessModel.html">사업소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./businessModel.html">비즈니스모델</a></li>
+                            <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./personnelSystem.html">인재채용</a>
+                        <ul class="subMenu">
+                            <li><a href="./personnelSystem.html">인사제도</a></li>
+                            <li><a href="./personnelQnA.html">채용문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./managementSystem.html">윤리경영</a>
+                        <ul class="subMenu">
+                            <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./deliveryIntro.html">납품안내</a>
+                        <ul class="subMenu">
+                            <li><a href="./deliveryIntro.html">절차소개</a></li>
+                            <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                            <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                            <li><a href="./deliveryhire.html">납품제안</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./customerNotice.html">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="./customerNotice.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="language">
+                <li class="on"><a href="#">KOR</a></li>
+                <li>|</li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </div>
+        <div class="blind"></div>
+    </header>
+
+    <!-- MB header -->
+    <header class="mbheader">
+        <div class="headerWrap clearfix">
+            <h1>
+                <a href="../index.html"><img src="../images/logo.png" alt="로고"></a>
+            </h1>
+            <img class='mobileMenuBtn' src="../images/mb/menuBtn.png" alt="모바일메뉴버튼">
+        </div>
+         
+        <nav class="mbMenu">
+            <ul class="mblanguage clearfix">
+                <li class="on">KOREA</li>
+                <li>ENGLISH</li>
+            </ul>
+            <ul class="mbMenuList">
+                <li>
+                    회사소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                        <li><a href="./companyGoal.html">비전 및 목표</a></li>
+                        <li><a href="./companyCi.html">CI 소개</a></li>
+                        <li><a href="./companyHistory.html">연혁</a></li>
+                        <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                        <li><a href="./companyPartners.html">관계사 / 해외지사</a></li>
+                        <li><a href="./companyMap.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    사업소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./businessModel.html">비즈니스모델</a></li>
+                        <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    인재채용<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./personnelSystem.html">인사제도</a></li>
+                        <li><a href="./personnelQnA.html">채용문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    운리경영<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                    </ul>
+                </li>
+                <li>
+                    납품안내<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./deliveryIntro.html">절차소개</a></li>
+                        <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                        <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                        <li><a href="./deliveryhire.html">납품제안</a></li>
+                    </ul>
+                </li>
+                <li>
+                    고객센터<img src="../images/mb/upImg.png" alt="">
+                    <ul class="subMenu">
+                        <li><a href="./customerNotice.html">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 서브네비게이션 -->
+    <section class="subVisualWrap">
+        <div class="subNavi">
+            <div class="subNaviWrap">
+                <ul class="clearfix">
+                    <li>  
+                        <a href="#">회사소개 <span>▼</span></a>
+                    </li>
+                    <li>
+                        <a href="#">CEO 인사말 <span>▼</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subVisual company">
+            <div class="visualTitle">
+                <h2>회사소개</h2>
+                <hr>
+                <p>세계적 품질의 생활용품 제품으로 산업 발전에 기여하기 위해<br/>끊임없는 열정을 쏟고 있습니다</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 컨텐츠 -->
+    <section>
+        <div class="contentsTitleBox">
+            <h2>회사소개</h2>
+            <hr>
+            <p>세계 최고 생활용품 전문 개발 기업으로 한걸음 앞서 나가겠습니다</p>
+        </div>
+        <div class="contentsWrap intro">
+            <div class="contents">                
+                <div class="companyIntroBox">
+                    <div class="imgBox">
+                        <img src="../images/sub/company_intro_01.png" alt="">
+                    </div>
+                    <ul>
+                        <li class="title">
+                            <span>차별화</span>된<br/>
+                            시장경쟁력
+                        </li>
+                        <li class="text">
+                            2009년 설립된 ㈜아성의 미션은 고객이 원하는 가치와 
+                            차별화된 시장 경쟁력을 갖춘 새로운 상품을 지속적으로 
+                            개발하는 기업이 되는 것이며, 주방, 인테리어, 욕실, 
+                            미용, 스포츠, 문구, 리빙 등 우리 생활에 필요한 모든 
+                            소비재 생활용품 분야에서 이러한 미션을 달성하기 위해
+                            노력하고 있습니다. 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="companyIntroBox">
+                    <ul>
+                        <li class="title">
+                            상품별<span>전문</span><br/>
+                            MD시스템
+                        </li>
+                        <li class="text">
+                            <p>
+                                저희는 상품의 가격을 유통업체가 아닌 고객들이 
+                                결정한다고 믿으며, 이러한 믿음을 바탕으로 좋은 
+                                품질과 합리적인 가격을 가진 상품들을 전 세계의 
+                                협력업체로부터 소싱하고 있습니다. 
+                            </p>
+                            <p>
+                                이를 위해 2010년과 2011년 중국 상해와 심천에 
+                                현지 팀 운영을 시작하였으며 2011년부터 중국을 
+                                비롯하여 동남아, 서남아, 미주, 유럽 등 지역 및 
+                                상품별 전문 MD 시스템으로 운영 중입니다. 
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="imgBox">
+                        <img src="../images/sub/company_intro_02.png" alt="">
+                    </div>
+                </div>
+
+                <div class="companyIntroBox">
+                    <div class="imgBox">
+                        <img src="../images/sub/company_intro_03.png" alt="">
+                    </div>
+                    <ul>
+                        <li class="title">
+                            <span>글로벌</span>종합<br/>
+                            유통회사
+                        </li>
+                        <li class="text">
+                            ㈜아성은 현재 주요 고객사인 대한민국 제1의 
+                            생활용품 유통기업인 아성다이소를 비롯하여 향후 
+                            많은 고객사들에게 다양한 상품들을 공급하고자 하며,
+                            “Good Price, Good Product”의 실현을 통해 
+                            글로벌 종합 유통 회사로 도약하고자 합니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ci -->
+    <section class="ciBox">
+        <ul>
+            <li><img src="../images/ci_image_01.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_02.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_03.png" alt=""></li>
+            <li class="vertical"></li>
+            <li><img src="../images/ci_image_04.png" alt=""></li>
+        </ul>
+    </section>
+
+<!-- footer -->
+<footer>
+    <div class="footerWrap">
+        <h1><img src="../images/foot_logo.png" alt="하단로고"></h1>
+        <div class="footinfoTable clearfix">
+            <h3>㈜아성</h3>
+            <ul>
+                <li><strong>대표이사</strong> : 박영주</li>
+                <li><strong>주소</strong> : 서울 강남구 남부순환로 2748 (도곡동)</li>
+            </ul>
+            <ul>
+                <li><strong>TEL</strong> : 02-405-0731</li>
+                <li><strong>FAX</strong> : 02-405-0701</li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            Copyright ⓒ 2018 ASUNG CO., LTD. ALL RIGHTS RESERVED
+        </div>
+
+        <a href="#" class="topBtn"><img src="../images/mb/topBtn.png" alt="맨위로"></a>
+    </div>
+</footer>
+</body>
+</html>

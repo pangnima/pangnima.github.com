@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no"/> <!-- 엣지 번호 링크 막기-->
+    <title>핫라인</title>
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="../js/common.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/sub.css">
+</head>
+<body>
+    <!-- PC header -->
+    <header class="pcheader">
+        <div class="headerWrap clearfix">
+            <h1><a href="../index.html"><img src="../images/logo.png" alt="로고"></a></h1>
+            <nav class="pcMenu">
+                <ul class="gnb clearfix">
+                    <li>
+                        <hr class="line">
+                        <a href="./companyCeo.html">회사소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                            <li><a href="./companyGoal.html">비전 및 목표</a></li>
+                            <li><a href="./companyCi.html">CI 소개</a></li>
+                            <li><a href="./companyHistory.html">연혁</a></li>
+                            <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                            <li><a href="./companyPartners.html">관계사 / 해외지사</a></li>
+                            <li><a href="./companyMap.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./businessModel.html">사업소개</a>
+                        <ul class="subMenu">
+                            <li><a href="./businessModel.html">비즈니스모델</a></li>
+                            <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./personnelSystem.html">인재채용</a>
+                        <ul class="subMenu">
+                            <li><a href="./personnelSystem.html">인사제도</a></li>
+                            <li><a href="./personnelQnA.html">채용문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./managementSystem.html">윤리경영</a>
+                        <ul class="subMenu">
+                            <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                            <li><a href="./managementHotline.html">핫라인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./deliveryIntro.html">납품안내</a>
+                        <ul class="subMenu">
+                            <li><a href="./deliveryIntro.html">절차소개</a></li>
+                            <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                            <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                            <li><a href="./deliveryhire.html">납품제안</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <hr class="line">
+                        <a href="./customerNotice.html">고객센터</a>
+                        <ul class="subMenu">
+                            <li><a href="./customerNotice.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="language">
+                <li class="on"><a href="#">KOR</a></li>
+                <li>|</li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </div>
+        <div class="blind"></div>
+    </header>
+
+    <!-- MB header -->
+    <header class="mbheader">
+        <div class="headerWrap clearfix">
+            <h1>
+                <a href="../index.html"><img src="../images/logo.png" alt="로고"></a>
+            </h1>
+            <img class='mobileMenuBtn' src="../images/mb/menuBtn.png" alt="모바일메뉴버튼">
+        </div>
+            
+        <nav class="mbMenu">
+            <ul class="mblanguage clearfix">
+                <li class="on">KOREA</li>
+                <li>ENGLISH</li>
+            </ul>
+            <ul class="mbMenuList">
+                <li>
+                    회사소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./companyCeo.html">CEO 인사말</a></li>
+                        <li><a href="./companyGoal.html">비전 및 목표</a></li>
+                        <li><a href="./companyCi.html">CI 소개</a></li>
+                        <li><a href="./companyHistory.html">연혁</a></li>
+                        <li><a href="./companyOrganizationchart.html">조직도</a></li>
+                        <li><a href="./companyPartners.html">관계사 / 해외지사</a></li>
+                        <li><a href="./companyMap.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    사업소개<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./businessModel.html">비즈니스모델</a></li>
+                        <li><a href="./mainbusiness.html">주요업무소개</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    인재채용<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./personnelSystem.html">인사제도</a></li>
+                        <li><a href="./personnelQnA.html">채용문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    윤리경영<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./managementSystem.html">윤리경영체계</a></li>
+                        <li><a href="./managementHotline.html">핫라인</a></li>
+                    </ul>
+                </li>
+                <li>
+                    납품안내<img src="../images/mb/upImg.png" alt="">
+                    <ul>
+                        <li><a href="./deliveryIntro.html">절차소개</a></li>
+                        <li><a href="./deliveryPartner.html">전략적파트너쉽</a></li>
+                        <li><a href="./deliveryQuality.html">품질불량관리</a></li>
+                        <li><a href="./deliveryhire.html">납품제안</a></li>
+                    </ul>
+                </li>
+                <li>
+                    고객센터<img src="../images/mb/upImg.png" alt="">
+                    <ul class="subMenu">
+                        <li><a href="./customerNotice.html">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 서브네비게이션 -->
+    <section class="subVisualWrap">
+        <div class="subNavi">
+            <div class="subNaviWrap">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="../images/sub/navi_home.png" alt="네비게이션홈"></a>
+                    </li>
+                    <li>  
+                        <a href="#">윤리경영 <span>▼</span>
+                            <ul class="navisubMenu">
+                                <li><a href="./customerNotice.html">회사소개</a></li>
+                                <li><a href="./businessModel.html">사업소개</a></li>
+                                <li><a href="./personnelSystem.html">인재채용</a></li>
+                                <li><a href="./managementSystem.html">윤리경영</a></li>
+                                <li><a href="./deliveryIntro.html">납품안내</a></li>
+                                <li><a href="./customerNotice.html">고객센터</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">핫라인 <span>▼</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subVisual personnel">
+            <span class="visualTitle">핫라인</span>
+        </div>
+    </section>
+
+    <!-- 컨텐츠 -->
+    <section>
+        <div class="contentsWrap">
+            <div class="contents management">
+                <div class="title">
+                    <h2>핫라인</h2>
+                    <p>아성HMP 및 관련 임직원의 <strong>비윤리행위/부당행위</strong>를 알게 된 경우<span>제보하여 주시면 해당 사실을 면밀히 조사하여 즉각 개선하도록 하겠습니다.</span></p>
+                </div>
+                <div class="managementBox">
+                    <img src="../images/sub/managementHotline_img_01.png" alt="핫라인" class="managementImg">
+                </div>
+            </div>
+        </div>
+        <div class="hotLineBox">
+            <ul>
+                <li>비윤리 행위 신고</li>
+                <li>아성HMP 임직원의 금품, 향응수수 등<br/>비위사실 제보/신고</li>
+                <li><a href="./managementHotline_pop.html" class="blueBtn">신고하기 <span>></span></a></li>
+            </ul>
+            <div class="halfLine"></div>
+            <ul>
+                <li>직장 내 부당행위 신고</li>
+                <li>직장 내 부당강요행위나 성희롱 등<br/>비위사실 제보/신고</li>
+                <li><a href="./managementHotline_pop.html" class="blueBtn">신고하기 <span>></span></a></li>
+            </ul>
+        </div>
+    </section>
+
+<!-- footer -->
+<footer>
+    <div class="footerWrap">
+        <h1><img src="../images/foot_logo.png" alt="하단로고"></h1>
+        <table class="footinfoTable">
+            <caption>회사정보</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">㈜아성에이치엠피</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>대표이사</span> : 박정부</td>
+                    <td><span>TEL</span> : 02-579-0411</td>
+                </tr>
+                <tr>
+                    <td><span>주소</span> : 서울 강남구 남부순환로 2748 (도곡동)</td>
+                    <td><span>FAX</span> : 02-579-0415</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="copyright">
+            Copyright ⓒ 2018 ASUNGHMP CO., LTD. ALL RIGHTS RESERVED
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- 팝업 -->
+
+
+<div class="popup hotLine">
+    <div class="popupcontainer">
+        <div class="textRight">
+            <button class="closeBtn">X</button>
+        </div>
+        <div class="popupContents">
+            <ul class="selector clearfix hotLineSelector">
+                <li class="on">실명제보</li>
+                <li>익명제보</li>
+            </ul>
+
+
+            <ul class="hotlineTable">
+                <li class="tableTitle">1. 기본정보</li>
+                <li>
+                    <ul class="clearfix">
+                        <li><span>제보 대상자 소속회사</span> <input type="text" ></li>
+                        <li><span class="short">관련사업부문</span> <input type="text" ></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="clearfix">
+                        <li><span>제보대상자</span> <input type="text" ></li>
+                        <li>
+                            <span class="short">대상유형</span>
+                            <div class="box">
+                                <div class="checks3">
+                                    <input type="radio" id="employee" name="ranktype"> 
+                                    <label for="employee">직원</label> 
+                                </div>
+                                <div class="checks3">
+                                    <input type="radio" id="department" name="ranktype"> 
+                                    <label for="department">부서</label> 
+                                </div>
+                                <div class="checks3">
+                                    <input type="radio" id="executives" name="ranktype"> 
+                                    <label for="executives">임원</label> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="full">
+                        <li><span>부서 / 업무</span> <input type="text" ></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="hotlineTable realName">
+                <li class="tableTitle">2. 제보자</li>
+                <li>
+                    <ul class="clearfix">
+                        <li><span>성명</span> <input type="text" ></li>
+                        <li><span class="short">전화번호</span> <input type="text" ></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="clearfix">
+                        <li><span>이메일</span> <input type="text" ></li>
+                        <li>
+                            <span class="short">회신방법</span>
+                            <div class="box">
+                                <div class="checks3">
+                                    <input type="radio" id="eamil" name="returnWay"> 
+                                    <label for="eamil">이메일</label> 
+                                </div>
+                                <div class="checks3">
+                                    <input type="radio" id="sms" name="returnWay"> 
+                                    <label for="sms">SMS</label> 
+                                </div>
+                                <div class="checks3">
+                                    <input type="radio" id="noreturn" name="returnWay"> 
+                                    <label for="noreturn">회신불필요</label> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="full">
+                        <li><span>부서 / 업무</span> <input type="text" ></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="hotlineTable anonymous">
+                <li class="tableTitle">2. 제보자</li>
+                <li>
+                    <ul class="clearfix">
+                        <li><span>아이디</span> <input type="text" ></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="hotlineTable">
+                <li class="tableTitle">3. 제보내용</li>
+                <li>
+                    <ul class="full clearfix">
+                        <li><span>제목</span> <input type="text" class="long"></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="full">
+                        <li><span>내용</span> <textarea name="" id="" cols="30" rows="10"></textarea></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="full">
+                        <li>
+                            <span>첨부파일</span> 
+                            <div>
+                                <div class="fileBtnBox blueBtn">
+                                    <input type="file" id="upload" readonly="readonly">
+                                    <label for="upload">첨부파일</label>
+                                </div>
+                                <!-- <a href="#" class="blueBtn">첨부파일</a> -->
+                                <p>
+                                    <span class="fileList">제보 드립니다.JPG</span>
+                                    <img src="../images/sub/fileListBtn.png" alt="파일제거" class="fileListBtn">
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="full">
+                        <li>
+                            <span>소속회사와의 관계</span>
+                            <div class="box">
+                                <div class="checks4">
+                                    <input type="radio" id="operation" name="operation"> 
+                                    <label for="operation">임직원</label> 
+                                </div>
+                                <div class="checks4">
+                                    <input type="radio" id="vender" name="operation"> 
+                                    <label for="vender">협력업체</label> 
+                                </div>
+                                <div class="checks4">
+                                    <input type="radio" id="vender2" name="operation"> 
+                                    <label for="vender2">고객</label> 
+                                </div>
+                                <div class="checks4">
+                                    <input type="radio" id="vender3" name="operation"> 
+                                    <label for="vender3">기타</label> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+         
+            <div class="checkBox">
+                <h3>4. 개인정보 수집 및 이용동의</h3>
+                <p>
+                    개인정보 수집 및 이용 동의(필수) <br/>
+                    <br/>
+                    • - 처리목적 : 윤리사무국 제보 및 조사, 결과통보<br/>
+                    • - 처리(수집) 항목 : 이름, 이메일주소, 전화번호, 소속회사<br/>
+                    • - 보유기간 : 목적 달성 시 <br/>
+                    <br/>
+                    상기의 개인정보 수집 및 이용을 거부하실 수 있으나 거부하시는 경우 서비스 이용이 불가합니다
+                </p>
+                <input type="checkbox" id="check"><label for="check">위 내용을 숙지 하였으며 수집하는개인정보에 동의합니다. </label>
+                <div class="g-recaptcha" data-sitekey="시크릿 키"></div><br/>
+                <button class="blueBtn">제안하기</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            var popHeight = $('body').height()
+            var popup = $('.popup')
+
+            popup.css('height',popHeight);
+            console.log(popHeight)
+        },100)
+        
+    });
+</script>
+</body>
+</html>
