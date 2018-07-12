@@ -19,7 +19,7 @@
 ### [윌리엄홀딩스](https://pangnima.github.io/william)
 
 ## 기초학습능력검사
-### [기초학습능력검사](www.nise-test.com)
+### [기초학습능력검사](http://www.nise-test.com/)
 
 
 # PC
