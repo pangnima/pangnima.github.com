@@ -1,0 +1,46 @@
+
+
+/* 해더 */
+#header {position:fixed; top:0; left:0; right:0; background:#29293a; z-index:10;}
+#header .inner {width:1314px; margin:0 auto; position: relative; height:158px;}
+#header .logo { position:absolute; top:50%; left:-110px; transform: translateY(-50%);}
+#header .logo a {background:url('../images/logo.png') 0 0 no-repeat; display:block; width:216px; height:68px;}
+
+#header .gnb {position: absolute; top:50%; right:0; transform: translateY(-50%);}
+#header .gnb li {float:left; margin-right:56px;}
+#header .gnb li a { font-family:'Roboto', sans-serif; color:#fff; font-size:30px;}
+
+#header .lang {position: absolute; top:50%; right:-110px; transform: translateY(-50%);}
+#header .lang a{font-size:25px; color:#94949d; margin-left:20px;}
+#header .lang a.active {color:#fff;}
+
+.mainvisual {
+    background:url('../images/main_visual.jpg') 0 0 no-repeat;
+    height:834px;
+}
+.mainvisual h2 {
+    font-size: 55px;
+    color: #fff;
+    font-weight: normal;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -2px;
+}
+#container .inner {width:1314px; margin:0 auto;}
+#container  h3 { font-size:50px; text-align: center; padding:90px 0 55px;}
+#container  p {
+    font-size: 23px;
+    color: #555;
+    letter-spacing: -1px;
+    line-height: 1.4;
+}
+
+#container div.about { padding-bottom:73px;}
+
+#container div.vision {background:#f5f5f5; }
+#container div.vision h3 {font-weight: normal;}
