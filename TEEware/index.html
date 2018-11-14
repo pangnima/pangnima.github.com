@@ -6,10 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <!-- 웹폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <title>TEEwrae</title>
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        $(document).ready(function(){
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 35,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        })
+
+        
+    </script>
+
+
 </head>
 <body>
     <div id="wrap">
@@ -50,9 +77,150 @@
             <div class="vision">
                 <div class="inner">
                     <h3>Our Vision</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <div>
+                                <img src="./images/vision_1.png" alt="">
+                            </div>
+                            <p>경제적인 보안</p>
+                            <span>TEE는 기존에 보급된 범용 하드웨어를 활용한 소프트웨어 기술로서, 특수목적 하드웨어보다 저렴하면서도 높은 수준의 보안을 제공합니다.</span>                            
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/vision_2.png" alt="">
+                            </div>
+                            <p>최고 수준의 보안</p>
+                            <span>격리된 실행 환경에서 민감한 프로그램이 실행되기 때문에 해커가 중요 데이터에 접근하지 못하도록 공격을 원천 차단합니다.</span>                            
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./images/vision_3.png" alt="">
+                            </div>
+                            <p>모두를 위한 보안</p>
+                            <span>소프트웨어 기반의 보안 솔루션은 블록체인 뿐만 아니라 데이터베이스, IoT, 인증 등 다양한 분야에 적용할 수 있습니다.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="partners">
+                <div class="inner">
+                    <h3>Partners</h3>
+                    <p>TEEware는 파트너와 협력하기 위해 최고의 보안 솔루션을 제공합니다.</p>
+                    <ul class="clearfix">
+                        <li><img src="./images/partner_1.png" alt=""></li>
+                        <li><img src="./images/partner_2.png" alt=""></li>
+                        <li><img src="./images/partner_3.png" alt=""></li>
+                        <li><img src="./images/partner_4.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="notice">
+                <div class="inner">
+                    <h3>Latest Notices</h3>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main">
+                                <span class="category">News</span>
+                                <span class="date">2018-11-11</span>
+                                <h4>주식액면분할에 따른 주권제출공고</h4>
+                                <p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+                                <a href="#">more ></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="category">Notice</span>
+                                <span class="date">2018-11-11</span>
+                                <h4>TEEware 에서 CUop 인턴을 모집합니다!</h4>
+                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
+                                <a href="#">more ></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="category">Notice</span>
+                                <span class="date">2018-11-11</span>
+                                <h4>언론속의 TEEware </h4>
+                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
+                                <a href="#">more ></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="category">Notice</span>
+                                <span class="date">2018-11-11</span>
+                                <h4>TEEware 에서 CUop 인턴을 모집합니다!</h4>
+                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
+                                <a href="#">more ></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="category">Notice</span>
+                                <span class="date">2018-11-11</span>
+                                <h4>언론속의 TEEware </h4>
+                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
+                                <a href="#">more ></a>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="inner">
+                    <h3>Contact Information</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <h4>TEEware</h4>
+                            <p>TEEware는 블록 체인 보안 솔루션 개발 회사입니다.<br/>우리는 전 세계의 개인 및 회사들에게 안전한 보안 지원을 제공함으로써 항상 귀하와 파트너가 될 준비가되어 있습니다.</p>
+                        </li>
+                        <li>
+                            <h4>Contact Us</h4>
+                            <dl>
+                                <dt><img src="./images/ico-pin.png" alt=""></dt>
+                                <dd>대전시 유성구 대학로 291 카이스트<br/>W8 2층 스타트업 스튜디오</dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="./images/ico-mail.png" alt=""></dt>
+                                <dd>contact@teeware.kr</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h4>Message</h4>
+                            <form action="">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="E-mail">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                <button>보내기</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map" id="map" style="height:538px; width:100%;">
+            </div>
+
+            <script>
+                        var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat:36.372367, lng: 127.360422},
+                zoom: 16
+                });
+            }
+            </script>
+            <script 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiFo1Mw2lF4Jz4_CaC5AlGmna3k1xmB_8&callback=initMap"
+            async defer></script>
+        </div>
+
+        <!--  푸터 -->
+        <div id="footer">
+            <h1 class="logo"><a href="#">로고</a></h1>
+            <p>© 2018 TEEware corp. All rights reserved.</p>
         </div>
     </div>
 </body>
+
+
 </html>

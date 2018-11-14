@@ -14,3 +14,5 @@ img {max-width:100%;}
 fieldset {border:0 none !important;}
 em {font-style:normal;}
 input[type='number']::-webkit-outer-spin-button,input[type='number']::-webkit-inner-spin-button {-webkit-appearance:none;}
+.clearfix {zoom:1;}
+.clearfix::after {content:""; display:block; clear: both;}
