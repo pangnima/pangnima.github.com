@@ -35,7 +35,7 @@
 #container div.vision ul li:nth-child(2) {width:360px; margin:0 50px 0 45px;}
 #container div.vision ul li:last-child {width:340px;}
 #container div.vision ul li div {min-height:147px;}
-#container div.vision ul li p {margin:30px 0 25px; color:#262626; line-height:1; font-size:22px; font-weight:500;}
+#container div.vision ul li p {margin:30px 0 25px; color:#262626; line-height:1; font-size:22px; font-weight:600;}
 #container div.vision ul li span {color:#545454; line-height:1.8; font-size:16px;}
 
 #container div.partners {background:url("../images/bg_partner.jpg") 0 0 no-repeat; background-size:cover; height:467px;}
