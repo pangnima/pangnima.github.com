@@ -3,7 +3,7 @@
 /* 해더 */
 #header {position:fixed; top:0; left:0; right:0; background:transparent; z-index:10; transition:all .5s;}
 #header.active {background:#29293a; z-index:100;}
-#header .inner {position:relative; width:1613px; height:77px; margin:0 auto;}
+#header .inner {position:relative; width:1240px; height:77px; margin:0 auto;}
 #header .logo {position:absolute; top:50%; left:0; transform:translateY(-50%);}
 #header .logo a {display:block; background:url("../images/logo.png") 0 0 no-repeat; width:130px; height:40px; font:0/0 a;}
 
