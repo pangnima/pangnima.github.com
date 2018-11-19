@@ -21,74 +21,32 @@
 
 
 	<script>
-		function initialize() {
-				var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
-				var markLocation = new google.maps.LatLng('36.369965', '127.359938'); // 마커가 위치할 위도와 경도
-				var mapOptions = {
-					center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
-					zoom: 16, // 지도 zoom단계
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				var map = new google.maps.Map(document.getElementById("map-canvas"), // id: map-canvas, body에 있는 div태그의 id와 같아야 함
-					mapOptions);
-
-				var size_x = 5; // 마커로 사용할 이미지의 가로 크기
-				var size_y = 5; // 마커로 사용할 이미지의 세로 크기
-
-				// 마커로 사용할 이미지 주소
-				
-
-				var markerImg = "./images/ico-maker.png"
-				var marker;
-				marker = new google.maps.Marker({
-					position: markLocation, // 마커가 위치할 위도와 경도(변수)
-					map: map,
-					icon: markerImg,
-				});
-
-				var content = '<img src="./images/logo_s.png" alt="">'; // 말풍선 안에 들어갈 내용
-
-				// 마커를 클릭했을 때의 이벤트. 말풍선 뿅~
-				var infowindow = new google.maps.InfoWindow({
-					content: content,
-				});
-
-				google.maps.event.addListener(marker, "click", function () {
-					infowindow.open(map, marker);
-				});
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-	
 		$(document).ready(function(){
-
-
-
             var newsSlide = new Swiper('.news', {
-            loop: true,
-			allowTouchMove:false,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+				loop: true,
+				allowTouchMove:false,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
             });
 
 			var boardSlide = new Swiper('.board', {
-            loop: true,
-			allowTouchMove:false,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            });
+				loop: true,
+				allowTouchMove:false,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
 
 			function winScroll(){
 				var winT = $(window).scrollTop()
@@ -107,10 +65,48 @@
 				}
 			}
 			winScroll();
-        })
+		});
+		function initialize() {
+			var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
+			var markLocation = new google.maps.LatLng('36.369965', '127.359938'); // 마커가 위치할 위도와 경도
+			var mapOptions = {
+				center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
+				zoom: 16, // 지도 zoom단계
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map-canvas"), // id: map-canvas, body에 있는 div태그의 id와 같아야 함
+				mapOptions);
+
+			var size_x = 5; // 마커로 사용할 이미지의 가로 크기
+			var size_y = 5; // 마커로 사용할 이미지의 세로 크기
+
+			// 마커로 사용할 이미지 주소
+			
+
+			var markerImg = "./images/ico-maker.png"
+			var marker;
+			marker = new google.maps.Marker({
+				position: markLocation, // 마커가 위치할 위도와 경도(변수)
+				map: map,
+				icon: markerImg,
+			});
+
+			var content = '<img src="./images/logo_s.png" alt="">'; // 말풍선 안에 들어갈 내용
+
+			// 마커를 클릭했을 때의 이벤트. 말풍선 뿅~
+			var infowindow = new google.maps.InfoWindow({
+				content: content,
+			});
+
+			google.maps.event.addListener(marker, "click", function () {
+				infowindow.open(map, marker);
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
 
 
-    </script>
+	
+</script>
 
 
 </head>
@@ -328,7 +324,7 @@
 
 			<div class="map" id="map-canvas" style="height:538px; width:100%;"></div>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcX-latFkKTJSszff32MndcyeirgLmpo&callback=initialize"
-			async defer></script>
+			 async defer></script>
 		</div>
 
 		<!--  푸터 -->
@@ -340,4 +336,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
