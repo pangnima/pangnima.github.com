@@ -18,9 +18,19 @@
     <!-- Initialize Swiper -->
     <script>
         $(document).ready(function(){
-            var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 35,
+            var newsSlide = new Swiper('.news', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+
+			var boardSlide = new Swiper('.board', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -33,7 +43,23 @@
             });
         })
 
-        
+		function winScroll(){
+			$(window).scroll(function(){
+				var winT = $(window).scrollTop()
+				if(winT > 10){
+					$('#header').addClass('active')
+				} else {
+					$('#header').removeClass('active')
+				}
+			});
+			if(winT > 10){
+				$('#header').addClass('active')
+			} else {
+				$('#header').removeClass('active')
+			}
+		}
+		winScroll();
+
     </script>
 
 
@@ -119,52 +145,99 @@
             </div>
 
             <div class="notice">
-                <div class="inner">
+                <div class="inner clearfix">
                     <h3>Latest Notices</h3>
                     <!-- Swiper -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide main">
-                                <span class="category">News</span>
-                                <span class="date">2018-11-11</span>
-                                <h4>주식액면분할에 따른 주권제출공고</h4>
-                                <p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
-                                <a href="#">more ></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="category">Notice</span>
-                                <span class="date">2018-11-11</span>
-                                <h4>TEEware 에서 CUop 인턴을 모집합니다!</h4>
-                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
-                                <a href="#">more ></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="category">Notice</span>
-                                <span class="date">2018-11-11</span>
-                                <h4>언론속의 TEEware </h4>
-                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
-                                <a href="#">more ></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="category">Notice</span>
-                                <span class="date">2018-11-11</span>
-                                <h4>TEEware 에서 CUop 인턴을 모집합니다!</h4>
-                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
-                                <a href="#">more ></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="category">Notice</span>
-                                <span class="date">2018-11-11</span>
-                                <h4>언론속의 TEEware </h4>
-                                <p>TEEware와 함께 하실 분을 모집하오니, 관심있으시거나 궁금한 사항이 있으신 분은  하단에 메일주소로 연락주기시 바랍니다.</p>
-                                <a href="#">more ></a>
-                            </div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
+					<div class="news">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<div class="board">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide main">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide main">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+
+					<div class="board">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide main">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide main">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
             </div>
 
             <div class="contact">
@@ -212,7 +285,7 @@
             }
             </script>
             <script 
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiFo1Mw2lF4Jz4_CaC5AlGmna3k1xmB_8&callback=initMap"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUgqrKdRc6jneXKpdkitroKCckOT9rrcE&callback=initMap"
             async defer></script>
         </div>
 
