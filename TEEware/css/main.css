@@ -15,7 +15,8 @@
 #header .lang a {margin-left:20px; color:#94949d; font-size:18px;}
 #header .lang a.active {color:#fff;}
 
-#wrap {min-width:1340px;}
+#wrap {overflow:hidden; min-width:1340px;}
+
 
 .mainvisual {background:url("../images/main_visual.jpg") 0 0 no-repeat; background-size:cover; height:783px; position: relative;}
 .mainvisual .inner {width:1240px; height:100%; margin:0 auto;}
