@@ -8,7 +8,7 @@
 #header .logo a {display:block; background:url("../images/logo.png") 0 0 no-repeat; width:130px; height:40px; font:0/0 a;}
 
 #header .gnb {position:absolute; top:50%; right:160px; transform:translateY(-50%);}
-#header .gnb li {float:left; margin-left:56px;}
+#header .gnb li {float:left; margin-left:56px; border-bottom:solid 1px transparent;}
 #header .gnb li a {color:#fff; font-family:"Roboto", sans-serif; font-size:20px;}
 #header .gnb li:hover {border-bottom:solid 1px #ffffff;}
 #header .lang {position:absolute; top:50%; right:10px; transform:translateY(-50%);}
@@ -35,7 +35,7 @@
 #container div.vision ul li:nth-child(2) {width:360px; margin:0 50px 0 45px;}
 #container div.vision ul li:last-child {width:340px;}
 #container div.vision ul li div {min-height:147px;}
-#container div.vision ul li p {margin:30px 0 25px; color:#262626; line-height:1; font-size:22px; font-weight:400;}
+#container div.vision ul li p {margin:30px 0 25px; color:#262626; line-height:1; font-size:22px; font-weight:500;}
 #container div.vision ul li span {color:#545454; line-height:1.8; font-size:16px;}
 
 #container div.partners {background:url("../images/bg_partner.jpg") 0 0 no-repeat; background-size:cover; height:467px;}
@@ -64,7 +64,7 @@
 #container div.notice .board .swiper-slide > div {height:100%;}
 #container div.notice .board .swiper-slide .contents .category {color:#1e90ff; font-size:16px;}
 #container div.notice .board .swiper-slide .contents .date {color:#a6a6a6; position:absolute; bottom:30px;left:40px; font-size:12px;}
-#container div.notice .board .swiper-slide .contents h4 {color:#262626; font-size:20px; padding:30px 0 30px;}
+#container div.notice .board .swiper-slide .contents h4 {padding:30px 0 30px; color:#262626; font-size:20px; font-weight:900;}
 #container div.notice .board .swiper-slide .contents p {color:#262626; word-break:keep-all; font-size:15px; padding:0; line-height: 1.4;}
 #container div.notice .board .swiper-slide .contents a {color:#777; font-size:14px; position:absolute; right:40px; bottom:30px;}
 #container div.notice .board .swiper-slide .contents a:after {content:""; display:inline-block; background:url(../images/moreArrow2.png) 0 0 no-repeat; width:5px; height:9px; margin-left:5px; vertical-align:middle;}
@@ -102,8 +102,8 @@
 #container div.contact ul li dl dd {display:inline-block; font-size:16px;}
 
 #container div.contact ul li form {text-align:right;}
-#container div.contact ul li input {background:#ececec; width:100%; height:50px; margin-bottom:10px; border:0; box-sizing:border-box; color:#545454; text-indent:20px; font-size:18px;}
-#container div.contact ul li textarea {background:#ececec; width:100%; height:200px; padding:20px; border:0; box-sizing:border-box; color:#545454; font-family:"Noto Sans KR", sans-serif; font-size:18px; resize:none;}
+#container div.contact ul li input {background:#ececec; width:100%; height:50px; margin-bottom:10px; border:0; box-sizing:border-box; color:#545454; text-indent:20px; font-size:16px;}
+#container div.contact ul li textarea {background:#ececec; width:100%; height:200px; padding:20px; border:0; box-sizing:border-box; color:#545454; font-family:"Noto Sans KR", sans-serif; font-size:16px; resize:none;}
 #container div.contact ul li button {background:#1e90ff; width:106px; height:37px; margin-top:8px; color:#fff; text-align:center; font-size:16px;}
 
 

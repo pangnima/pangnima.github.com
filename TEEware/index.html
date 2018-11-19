@@ -17,14 +17,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
 
-
-
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+	
 	<!-- Initialize Swiper -->
 	<script>
 		$(document).ready(function(){
             var newsSlide = new Swiper('.news', {
             loop: true,
+			allowTouchMove:false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -37,6 +37,7 @@
 
 			var boardSlide = new Swiper('.board', {
             loop: true,
+			allowTouchMove:false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -82,7 +83,8 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Vision</a></li>
 					<li><a href="#">Partners</a></li>
-					<li><a href="#">Contat</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 				<div class="lang">
 					<a href="#" class="active">Kor</a>
@@ -282,6 +284,9 @@
 			</div>
 
 			<div class="map" id="map-canvas" style="height:538px; width:100%;"></div>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUgqrKdRc6jneXKpdkitroKCckOT9rrcE"
+			type="text/javascript"></script>
 		</div>
 
 		<!--  푸터 -->
@@ -301,10 +306,9 @@
 	function initialize() {
 		var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
 		var markLocation = new google.maps.LatLng('36.369965', '127.359938'); // 마커가 위치할 위도와 경도
-		// 36.369965,127.359938,16z
 		var mapOptions = {
 			center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
-			zoom: 20, // 지도 zoom단계
+			zoom: 16, // 지도 zoom단계
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 		var map = new google.maps.Map(document.getElementById("map-canvas"), // id: map-canvas, body에 있는 div태그의 id와 같아야 함
