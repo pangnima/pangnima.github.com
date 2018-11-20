@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<!-- 웹폰트 -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>TEEwrae</title>
+
+	<!-- Swiper JS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			var newsSlide = new Swiper('.news', {
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+
+			var boardSlide = new Swiper('.board', {
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+			
+			$('.menu').on('click' , function(){
+				$('#nav').slideToggle();
+			})
+		});
+		function initialize() {
+			var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
+			var markLocation = new google.maps.LatLng('36.369965', '127.359938'); // 마커가 위치할 위도와 경도
+			var mapOptions = {
+				center: mapLocation, // 지도에서 가운데로 위치할 위도와 경도(변수)
+				zoom: 13, // 지도 zoom단계
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+			var size_x = 5; // 마커로 사용할 이미지의 가로 크기
+			var size_y = 5; // 마커로 사용할 이미지의 세로 크기
+
+			// 마커로 사용할 이미지 주소
+			
+
+			var markerImg = "./images/ico-maker.png"
+			var marker;
+			marker = new google.maps.Marker({
+				position: markLocation, // 마커가 위치할 위도와 경도(변수)
+				map: map,
+				icon: markerImg,
+			});
+			
+			var content = '<img src="./images/logo_s.png" style="width:70px" alt="">'; // 말풍선 안에 들어갈 내용
+
+			// 마커를 클릭했을 때의 이벤트. 말풍선 뿅~
+			var infowindow = new google.maps.InfoWindow({
+				content: content,
+			});
+
+			google.maps.event.addListener(marker, "click", function () {
+				infowindow.open(map, marker);
+			});
+
+			infowindow.open(map, marker);
+		}
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1 class="logo"><a href="#"><img src="./images/mobile/logo.png" alt="">로고</a></h1>
+			<button type="button" class="menu"></button>
+		</div>
+		<div id="nav">
+			<ul>
+				<li>About</li>
+				<li>Vision</li>
+				<li>Partners</li>
+				<li>News</li>
+				<li>Contact</li>
+			</ul>
+			<div class="lang">
+				<a href="#" class="active">Kor</a>
+				<a href="#">Eng</a>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="mainvisual">
+				<h2>Teeware는 보안 기술을 통해<br/>블록체인과 같은 첨단 기술을 신뢰하고<br/>사용할 수 있는 세상을 만듭니다.</h2>
+			</div>
+	
+			<div class="about">
+				<div class="inner">
+					<h3>TEE 기반의 보안 솔루션</h3>
+					<p>TEE(Trusted Execution Environment, 신뢰실행환경)은 하드웨어와 소프트웨어의 장점만을 결합한 첨단 보안 기술로서, 별도의 하드웨어가 아니면서도 분리된 하드웨어 수준의 보안성을 제공합니다. TEE로 안전한 실행 환경을 만들어 해킹으로부터 중요 데이터를 보호함으로써 블록체인을 비롯한 중요 플랫폼의 신뢰성을 높이고, 나아가 ICT 산업 전반의 안전성을 향상시키는 것을 목표로 하고 있습니다.</p>
+				</div>
+			</div>
+
+			<div class="vision">
+				<div class="inner">
+					<h3>Our Vision</h3>
+					<ul>
+						<li>
+							<div class="imgBox">
+								<img src="./images/mobile/vision_1.png" alt="">
+							</div>
+							<div>
+								<h4>경제적인 보안</h4>
+								<p>TEE는 기존에 보급된 범용 하드웨어를 활용한 소프트웨어 기술로서, 특수목적 하드웨어보다 저렴하면서도 높은 수준의 보안을 제공합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="imgBox">
+								<img src="./images/mobile/vision_2.png" alt="">
+							</div>
+							<div>
+								<h4>최고 수준의 보안</h4>
+								<p>격리된 실행 환경에서 민감한 프로그램이 실행되기 때문에 해커가 중요 데이터에 접근하지 못하도록 공격을 원천 차단합니다.</p>
+							</div>
+						</li>
+						<li>
+							<div class="imgBox">
+								<img src="./images/mobile/vision_3.png" alt="">
+							</div>
+							<div>
+								<h4>모두를 위한 보안</h4>
+								<p>소프트웨어 기반의 보안 솔루션은 블록체인 뿐만 아니라 데이터베이스, IoT, 인증 등 다양한 분야에 적용할 수 있습니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="partners">
+				<div class="inner">
+					<h3>Partners</h3>
+					<p>TEEware는 파트너와 협력하기 위해 최고의 보안 솔루션을 제공합니다.</p>
+					<ul>
+						<li><img src="./images/mobile/partner_1.png" alt=""></li>
+						<li><img src="./images/mobile/partner_2.png" alt=""></li>
+						<li><img src="./images/mobile/partner_3.png" alt=""></li>
+						<li><img src="./images/mobile/partner_4.png" alt=""></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="notice">
+				<div class="inner">
+					<h3>Latest Notices</h3>
+	
+					<!-- Swiper -->
+					<div class="news">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div>
+									<div class="contents">
+										<span class="category">News</span>
+										<span class="date">2018-11-11</span>
+										<h4>주식액면분할에 따른 주권제출공고</h4>
+										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+										<a href="#">more</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					
+					<div class="boardSlide">
+						<div class="board">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+		
+						<div class="board">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact">
+				<div class="inner">
+					<h3>Contact Information</h3>
+					<ul class="clearfix">
+						<li>
+							<h4>TEEware</h4>
+							<p>TEEware는 블록 체인 보안 솔루션 개발 회사입니다.<br />우리는 전 세계의 개인 및 회사들에게 안전한 보안 지원을 제공함으로써 항상 귀하와 파트너가 될 준비가되어 있습니다.</p>
+						</li>
+						<li>
+							<h4>Contact Us</h4>
+							<dl>
+								<dt><img src="./images/ico-pin.png" alt=""></dt>
+								<dd>대전시 유성구 대학로 291 카이스트 W8 2층 스타트업 스튜디오</dd>
+							</dl>
+							<dl>
+								<dt><img src="./images/ico-mail.png" alt=""></dt>
+								<dd>contact@teeware.kr</dd>
+							</dl>
+						</li>
+						<li>
+							<h4>Message</h4>
+							<form action="">
+								<input type="text" placeholder="Name">
+								<input type="text" placeholder="E-mail">
+								<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+								<button>보내기</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="map" id="map-canvas" style="height:158px; width:100%;"></div>
+			<script 
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcX-latFkKTJSszff32MndcyeirgLmpo&callback=initialize"
+				async defer
+			></script>
+		</div>
+
+		<!--  푸터 -->
+		<div id="footer">
+			<div class="inner">
+				<h1 class="logo"><a href="#"><img src="./images/mobile/logo.png" alt=""></a></h1>
+				<p>© 2018 TEEware corp. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
