@@ -41,8 +41,8 @@
 #container div.partners {background:url("../images/bg_partner.jpg") 0 0 no-repeat; background-size:cover; min-height:467px; padding:80px 0;}
 #container div.partners h3 {padding-top:0; padding-bottom:25px; color:#fff;}
 #container div.partners p {color:#fff; letter-spacing:0; text-align:center; font-size:18px;}
-#container div.partners ul {width:1210px; margin:40px auto 0;}
-#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:40px; ;}
+#container div.partners ul {margin:40px auto 0;}
+#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:35px; ;}
 #container div.partners ul li:first-child {margin-left:0;}
 #container div.partners ul li:nth-child(5n+1) {margin-left:0;}
 
