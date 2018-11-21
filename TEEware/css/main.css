@@ -42,7 +42,7 @@
 #container div.partners h3 {padding-top:0; padding-bottom:25px; color:#fff;}
 #container div.partners p {color:#fff; letter-spacing:0; text-align:center; font-size:18px;}
 #container div.partners ul {margin:40px auto 0;}
-#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:27px; ;}
+#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:25px; ;}
 #container div.partners ul li:first-child {margin-left:0;}
 #container div.partners ul li:nth-child(5n+1) {margin-left:0;}
 
