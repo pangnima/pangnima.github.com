@@ -65,21 +65,13 @@
 			};
 			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-			var size_x = 5; // 마커로 사용할 이미지의 가로 크기
-			var size_y = 5; // 마커로 사용할 이미지의 세로 크기
+			var size_x = 35; // 마커로 사용할 이미지의 가로 크기
+			var size_y = 35; // 마커로 사용할 이미지의 세로 크기
 
 			// 마커로 사용할 이미지 주소
 			
-			var markerImg = {
-				url: './images/mobile/ico-maker.png',
-				// This marker is 20 pixels wide by 32 pixels high.
-				size: new google.maps.Size(10, 10),
-				// The origin for this image is (0, 0).
-				origin: new google.maps.Point(0, 0),
-				// The anchor for this image is the base of the flagpole at (0, 32).
-				anchor: new google.maps.Point(0, 32)
-			};
-			// var markerImg = "./images/ico-maker.png"
+
+			var markerImg = "./images/mobile/ico-maker.png"
 			var marker;
 			marker = new google.maps.Marker({
 				position: markLocation, // 마커가 위치할 위도와 경도(변수)
