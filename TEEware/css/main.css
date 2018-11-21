@@ -21,7 +21,7 @@
 .mainvisual {position:relative; background:url("../images/main_visual.jpg") 0 0 no-repeat; background-size:cover; height:783px;}
 .mainvisual .inner {width:1240px; height:100%; margin:0 auto;}
 .mainvisual h2 {position:absolute; top:50%; left:50%; width:100%; color:#fff; line-height:1.4; letter-spacing:-2px; text-align:center; font-size:42px; transform:translate(-50%,-50%);}
-#container .inner {width:1200px; margin:0 auto;}
+#container .inner {width:1155px; margin:0 auto;}
 #container  h3 {padding:80px 0 45px; letter-spacing:-0.5px; text-align:center; font-size:38px;}
 
 #container  p {padding:0 50px; color:#555; line-height:2; font-size:16px; word-break:keep-all;}
@@ -42,12 +42,12 @@
 #container div.partners h3 {padding-top:0; padding-bottom:25px; color:#fff;}
 #container div.partners p {color:#fff; letter-spacing:0; text-align:center; font-size:18px;}
 #container div.partners ul {margin:40px auto 0;}
-#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:35px; ;}
+#container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:27px; ;}
 #container div.partners ul li:first-child {margin-left:0;}
 #container div.partners ul li:nth-child(5n+1) {margin-left:0;}
 
 #container div.notice {background:#ececec; padding-bottom:90px;}
-#container div.notice .inner {width:1200px; margin:0 auto;}
+#container div.notice .inner { margin:0 auto;}
 #container div.notice .inner > div {float:left; position:relative; height:298px;}
 #container div.notice .news {overflow:hidden; width:527px;}
 #container div.notice .news .swiper-slide > div {background:url("../images/bg_slide.jpg") 0 0 no-repeat; height:100%;}
@@ -75,10 +75,10 @@
 #container div.notice .board .swiper-button-next {top:30px; right:40px; background:url("../images/board_arrow.png") -33px 0 no-repeat; width:27px; height:26px; margin:0;}
 
 #container div.contact {padding-bottom:50px;}
-#container div.contact .inner {width:1200px; margin:0 auto;}
+#container div.contact .inner {margin:0 auto;}
 #container div.contact h4 {margin-bottom:20px; font-size:20px;}
 #container div.contact p {padding:0; font-size:16px;}
-#container div.contact ul li {float:left; width:350px; color:#545454; letter-spacing:-0.5px; font-size:23px; word-break:keep-all;}
+#container div.contact ul li {float:left; width:330px; color:#545454; letter-spacing:-0.5px; font-size:23px; word-break:keep-all;}
 #container div.contact ul li:nth-child(2) {margin:0 45px 0 80px;}
 #container div.contact ul li:last-child {width:368px;}
 #container div.contact ul li dl {margin-bottom:35px;}
