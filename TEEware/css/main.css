@@ -78,7 +78,7 @@
 #container div.contact .inner {width:1200px; margin:0 auto;}
 #container div.contact h4 {margin-bottom:20px; font-size:20px;}
 #container div.contact p {padding:0; font-size:16px;}
-#container div.contact ul li {float:left; width:330px; color:#545454; letter-spacing:-0.5px; font-size:23px; word-break:keep-all;}
+#container div.contact ul li {float:left; width:350px; color:#545454; letter-spacing:-0.5px; font-size:23px; word-break:keep-all;}
 #container div.contact ul li:nth-child(2) {margin:0 45px 0 80px;}
 #container div.contact ul li:last-child {width:368px;}
 #container div.contact ul li dl {margin-bottom:35px;}
