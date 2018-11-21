@@ -43,7 +43,7 @@
 			});
 			
 			$('.menu').on('click' , function(){
-				$('#nav').slideToggle();
+				$('#nav').toggleClass('active');
 			})
 		});
 		function initialize() {
@@ -88,7 +88,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<h1 class="logo"><a href="#"><img src="./images/mobile/logo.png" alt="">로고</a></h1>
+			<h1 class="logo"><a href="#">로고</a></h1>
 			<button type="button" class="menu"></button>
 		</div>
 		<div id="nav">
@@ -296,7 +296,7 @@
 				</div>
 			</div>
 
-			<div class="map" id="map-canvas" style="height:158px; width:100%;"></div>
+			<div class="map" id="map-canvas"></div>
 			<script 
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcX-latFkKTJSszff32MndcyeirgLmpo&callback=initialize"
 				async defer
