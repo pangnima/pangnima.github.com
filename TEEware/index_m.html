@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="TEEware는 블록 체인 보안 솔루션 개발 회사입니다.">
+	<meta property="og:description" content="TEEware는 블록 체인 보안 솔루션 개발 회사입니다.">
+	<meta property="og:image" content="http://sasunggoo1.cafe24.com/web/upload/site.jpg">
+	<meta property="og:url" content="http://teeware.kr">
+
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/mobile.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -20,6 +26,7 @@
 		$(document).ready(function(){
 			var newsSlide = new Swiper('.news', {
 				loop: true,
+				allowTouchMove:false,
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
@@ -32,6 +39,7 @@
 
 			var boardSlide = new Swiper('.board', {
 				loop: true,
+				allowTouchMove:false,
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,
