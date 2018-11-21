@@ -38,8 +38,8 @@
 #container div.vision ul li p {margin:30px 0 25px; color:#262626; line-height:1; font-size:22px; font-weight:600;}
 #container div.vision ul li span {color:#545454; line-height:1.8; font-size:16px;}
 
-#container div.partners {background:url("../images/bg_partner.jpg") 0 0 no-repeat; background-size:cover; min-height:467px; padding-bottom:10px;}
-#container div.partners h3 {padding-bottom:25px; color:#fff;}
+#container div.partners {background:url("../images/bg_partner.jpg") 0 0 no-repeat; background-size:cover; min-height:467px; padding:80px 0;}
+#container div.partners h3 {padding-top:0; padding-bottom:25px; color:#fff;}
 #container div.partners p {color:#fff; letter-spacing:0; text-align:center; font-size:18px;}
 #container div.partners ul {width:1210px; margin:40px auto 0;}
 #container div.partners ul li {display:inline-block; margin-bottom:20px; margin-left:40px; ;}
