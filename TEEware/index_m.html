@@ -53,6 +53,10 @@
 			$('.menu').on('click' , function(){
 				$('#nav').toggleClass('active');
 			})
+			// close pop
+			$('.btn_close').on('click' , function(){
+				$('.layerPop').toggleClass('active')
+			})
 		});
 		function initialize() {
 			var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
@@ -92,10 +96,33 @@
 
 			infowindow.open(map, marker);
 		}
+
+		// 레이어팝업
+		function layerPop() {
+			var layerPopH = $('.layerPop').height();
+			if( layerPopH > 599 ){
+				$('.layerPop .inner').css({
+					overflowY: 'scroll'
+				})
+			} else {
+				$('.layerPop .inner').css({
+					overflowY: 'scroll'
+				})
+			}
+		}
 </script>
 </head>
 <body>
 	<div id="wrap">
+		<!-- 팝업 -->
+		<div class="layerPop active">
+			<a href="#" class="btn_close">닫기</a>
+			<div class="inner">
+				<img src="./images/mobile//popup.jpg" alt="">
+			</div>
+		</div>
+		<!-- ..팝업 -->
+
 		<div id="header">
 			<h1 class="logo"><a href="#">로고</a></h1>
 			<button type="button" class="menu"></button>
