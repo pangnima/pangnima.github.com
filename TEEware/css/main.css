@@ -17,6 +17,7 @@
 .pcHeader #header .lang a.active {color:#fff;}
 
 .mbHeader {display:none;}
+.gm-svpc {display:none !important;}
 
 #wrap {overflow:hidden; min-width:1340px;}
 
