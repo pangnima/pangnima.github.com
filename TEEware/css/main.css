@@ -212,9 +212,9 @@
 
 	#footer {background:#29293a;}
 	#footer .inner {position:relative; width:100%; width:100%; min-width:320px; height:42px; margin:0 auto;}
-	#footer .logo {position:absolute; top:50%; left:30px; transform:translateY(-50%);}
+	#footer .logo {position:absolute; top:50%; left:10px; transform:translateY(-50%);}
 	#footer .logo a {display:block; width:73px; height:23px; font:0/0 a; background-size:cover;}
-	#footer p {color:#ccc; line-height:42px; letter-spacing:-0.5px; text-align:right; font-size:10px; font-weight:normal; padding-right:30px;}
+	#footer p {color:#ccc; line-height:42px; letter-spacing:-0.5px; text-align:right; font-size:10px; font-weight:normal; padding-right:10px;}
 	
 	.map {height:300px;}
 
