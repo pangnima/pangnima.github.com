@@ -159,9 +159,9 @@
 	#container div.partners h3 {color:#fff;}
 	#container div.partners p {width:305px; margin:0 auto; margin-top:-10px; color:#fff; letter-spacing:-0.5px; text-align:center; font-size:11px;}
 	#container div.partners ul {width:90%; min-width:320px; margin:15px auto 0;}
-	#container div.partners ul:after{display:block; content:""; clear: both;}
-	#container div.partners ul li {margin:0; padding:0; float:left; width:23%; margin-right:2%; margin-bottom:2%;}
-	#container div.partners ul li:nth-child(4n){ margin-right:0;}
+	#container div.partners ul:after {content:""; display:block; clear:both;}
+	#container div.partners ul li {float:left; width:23%; margin:0; margin-right:2%; margin-bottom:2%; padding:0;}
+	#container div.partners ul li:nth-child(4n) {margin-right:0;}
 	#container div.partners ul li img {width:100%;}
 
 	#container div.notice {background:#f5f5f5; padding-bottom:20px;}
@@ -213,11 +213,12 @@
 	#footer {background:#29293a;}
 	#footer .inner {position:relative; width:100%; width:100%; min-width:320px; height:42px; margin:0 auto;}
 	#footer .logo {position:absolute; top:50%; left:10px; transform:translateY(-50%);}
-	#footer .logo a {display:block; width:73px; height:23px; font:0/0 a; background-size:cover;}
-	#footer p {color:#ccc; line-height:42px; letter-spacing:-0.5px; text-align:right; font-size:10px; font-weight:normal; padding-right:10px;}
+	#footer .logo a {display:block; background-size:cover; width:73px; height:23px; font:0/0 a;}
+	#footer p {padding-right:10px; color:#ccc; line-height:42px; letter-spacing:-0.5px; text-align:right; font-size:10px; font-weight:normal;}
 	
 	.map {height:300px;}
 
-	.layerPop .contents {top:0; width:100%; padding:0;}
+	.layerPop .contents {top:0; width:100%; padding:50px 25px 0; box-sizing:border-box;}
 	.layerPop .contents img {width:100%;}
 	.layerPop .btn_close {position:absolute; top:15px; right:15px; background:url("../images/btn_close.png") 0 0 no-repeat; background-size:cover; width:20px; height:20px; font:0/0 a; cursor:pointer;}}
+	.layerPop .inner p {margin-top:10px; padding-bottom:20px; color:#666; line-height:1.6; letter-spacing:-0.5px; font-size:14px;}
