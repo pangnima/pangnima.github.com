@@ -80,6 +80,11 @@
 			$('.btn_close').on('click' , function(){
 				$('.layerPop').toggleClass('active')
 			})
+
+			
+			$('.menu').on('click' , function(){
+				$('#nav').toggleClass('active');
+			})
 		});
 		function initialize() {
 			var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
@@ -134,9 +139,6 @@
 				})
 			}
 		}
-
-
-		
 </script>
 </head>
 
@@ -148,24 +150,48 @@
 	<div id="wrap">
 		<!-- 팝업 -->
 		<div class="layerPop">
-			<h2>Notice <span class="btn_close">닫기</span></h2>
-			<div class="inner">
-				<img src="https://via.placeholder.com/150" alt="">
-				<p>2017년 11월 5일 기준으로 1BTC당 8,350,000원선에서 거래되고 있다. 가격의 변동성이 상당히 높아, 2015년 1월에는 1 BTC에 미화 275달러 선[4]까지 떨어졌었으며, 2013년 12월 한창 고가에서 거래될 때에는 1 BTC에 1,000달러 이상을 기록한 적도 있다. 2017년 5월 22일, 한화 300만 원을 넘어섰다. 2017년 5월 25일, 갑작스러운 폭등으로 1 BTC에 한화 422만 원선까지 가격이 치솟았고, 5월 27일에 다시 270만 원까지 폭락한 뒤, 2017년 6월 기준으로 320만 원대에 안정되어 있다. 그러다 2017년 7월 16일, 하드포크 위기를 맞아 220만 원대로 폭락하였으나, 8월 1일, 하드포크가 일어난 이후에는 기존의 320만 원을 훌쩍 뛰어넘어 가격 상승이 진행되었다. 그 뒤에 500만 원선까지 올라가다가, 2017년 10월 5일부터 6일까지 하루만에 80만 원 이상의 시세가 치솟으며 최대치인 한화 650만 원선을 돌파하였다. 2017년 10월 말 기준으로 600만 원선에서 미세한 등락을 반복하였다. 2017년 12월에는 2,000만 원 선을 넘긴 뒤에 1,800만 원 ~ 2,400만 원 사이를 왔다갔다 하고 있다. 하지만 전 국민적 관심이 쏠렸던 2017년 연말을 이후로 비트코인 시세는 바닥을 치게 되는데.. 2018년 6월 25일 기준 향후 100년간 발행될 화폐량이 미리 정해져 있고, 2100만 개까지만 발행 된다. 현재는 약 1500만 개 정도가 발행되었으며(2015.2.4기준), 앞으로 600만 개가 더 발행될 예정이다. 세계 통화로 사용되기는 턱없이 부족한 숫자지만 1BTC가 소숫점 아래 8자리, 즉 10^{-8}10 −8 BTC = 0.000000010.00000001BTC까지 분할이 가능하다.#[5] 앞으로 발행될 모든 비트코인의 총량이 2100만 개이니, 결과적으로는 현재 기준으로 21,000,000 * 100,000,000 = 2,100,000,000,000,000(2100조) 사토시[6]가 유통될 수 있다.</p>
+			<div class="contents">
+				<span class="btn_close">닫기</span>
+				<div class="inner">
+					<img src="./images/popImg.jpg" alt="">
+					<!-- <p>2017년 11월 5일 기준으로 1BTC당 8,350,000원선에서 거래되고 있다. 가격의 변동성이 상당히 높아, 2015년 1월에는 1 BTC에 미화 275달러 선[4]까지 떨어졌었으며, 2013년 12월 한창 고가에서 거래될 때에는 1 BTC에 1,000달러 이상을 기록한 적도 있다. 2017년 5월 22일, 한화 300만 원을 넘어섰다. 2017년 5월 25일, 갑작스러운 폭등으로 1 BTC에 한화 422만 원선까지 가격이 치솟았고, 5월 27일에 다시 270만 원까지 폭락한 뒤, 2017년 6월 기준으로 320만 원대에 안정되어 있다. 그러다 2017년 7월 16일, 하드포크 위기를 맞아 220만 원대로 폭락하였으나, 8월 1일, 하드포크가 일어난 이후에는 기존의 320만 원을 훌쩍 뛰어넘어 가격 상승이 진행되었다. 그 뒤에 500만 원선까지 올라가다가, 2017년 10월 5일부터 6일까지 하루만에 80만 원 이상의 시세가 치솟으며 최대치인 한화 650만 원선을 돌파하였다. 2017년 10월 말 기준으로 600만 원선에서 미세한 등락을 반복하였다. 2017년 12월에는 2,000만 원 선을 넘긴 뒤에 1,800만 원 ~ 2,400만 원 사이를 왔다갔다 하고 있다. 하지만 전 국민적 관심이 쏠렸던 2017년 연말을 이후로 비트코인 시세는 바닥을 치게 되는데.. 2018년 6월 25일 기준 향후 100년간 발행될 화폐량이 미리 정해져 있고, 2100만 개까지만 발행 된다. 현재는 약 1500만 개 정도가 발행되었으며(2015.2.4기준), 앞으로 600만 개가 더 발행될 예정이다. 세계 통화로 사용되기는 턱없이 부족한 숫자지만 1BTC가 소숫점 아래 8자리, 즉 10^{-8}10 −8 BTC = 0.000000010.00000001BTC까지 분할이 가능하다.#[5] 앞으로 발행될 모든 비트코인의 총량이 2100만 개이니, 결과적으로는 현재 기준으로 21,000,000 * 100,000,000 = 2,100,000,000,000,000(2100조) 사토시[6]가 유통될 수 있다.</p> -->
+				</div>
 			</div>
 		</div>
 		<!-- ..팝업 -->
 		<!-- 헤더 -->
-		<div id="header">
-			<div class="inner">
+		<div class="pcHeader">
+			<div id="header">
+				<div class="inner">
+					<h1 class="logo"><a href="#">로고</a></h1>
+					<ul class="gnb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="lang">
+						<a href="#" class="active">Kor</a>
+						<a href="#">Eng</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mbHeader">
+			<div id="header">
 				<h1 class="logo"><a href="#">로고</a></h1>
-				<ul class="gnb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Vision</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Contact</a></li>
+				<button type="button" class="menu"></button>
+			</div>
+			<div id="nav">
+				<ul>
+					<li>About</li>
+					<li>Vision</li>
+					<li>Partners</li>
+					<li>News</li>
+					<li>Contact</li>
 				</ul>
 				<div class="lang">
 					<a href="#" class="active">Kor</a>
@@ -199,25 +225,31 @@
 					<h3>Our Vision</h3>
 					<ul class="clearfix">
 						<li>
-							<div>
+							<div class="imgBox">
 								<img src="./images/vision_1.png" alt="">
 							</div>
-							<p>경제적인 보안</p>
-							<span>TEE는 기존에 보급된 범용 하드웨어를 활용한 소프트웨어 기술로서, 특수목적 하드웨어보다 저렴하면서도 높은 수준의 보안을 제공합니다.</span>
+							<div>
+								<p>경제적인 보안</p>
+								<span>TEE는 기존에 보급된 범용 하드웨어를 활용한 소프트웨어 기술로서, 특수목적 하드웨어보다 저렴하면서도 높은 수준의 보안을 제공합니다.</span>
+							</div>
 						</li>
 						<li>
-							<div>
+							<div class="imgBox">
 								<img src="./images/vision_2.png" alt="">
 							</div>
-							<p>최고 수준의 보안</p>
-							<span>격리된 실행 환경에서 민감한 프로그램이 실행되기 때문에 해커가 중요 데이터에 접근하지 못하도록 공격을 원천 차단합니다.</span>
+							<div>
+								<p>최고 수준의 보안</p>
+								<span>격리된 실행 환경에서 민감한 프로그램이 실행되기 때문에 해커가 중요 데이터에 접근하지 못하도록 공격을 원천 차단합니다.</span>
+							</div>
 						</li>
 						<li>
-							<div>
+							<div class="imgBox">
 								<img src="./images/vision_3.png" alt="">
 							</div>
-							<p>모두를 위한 보안</p>
-							<span>소프트웨어 기반의 보안 솔루션은 블록체인 뿐만 아니라 데이터베이스, IoT, 인증 등 다양한 분야에 적용할 수 있습니다.</span>
+							<div>
+								<p>모두를 위한 보안</p>
+								<span>소프트웨어 기반의 보안 솔루션은 블록체인 뿐만 아니라 데이터베이스, IoT, 인증 등 다양한 분야에 적용할 수 있습니다.</span>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -271,64 +303,67 @@
 						<div class="swiper-button-prev"></div>
 					</div>
 
-					<div class="board">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide main">
-								<div>
-									<div class="contents">
-										<span class="category">News</span>
-										<span class="date">2018-11-11</span>
-										<h4>주식액면분할에 따른 주권제출공고</h4>
-										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
-										<a href="#" class="btn_more">more</a>
+					
+					<div class="boardSlide">
+						<div class="board">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#" class="btn_more">more</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide main">
-								<div>
-									<div class="contents">
-										<span class="category">News</span>
-										<span class="date">2018-11-11</span>
-										<h4>주식액면분할에 따른 주권제출공고</h4>
-										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
-										<a href="#">more</a>
-									</div>
-								</div>
-							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
 
-					<div class="board">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide main">
-								<div>
-									<div class="contents">
-										<span class="category">News</span>
-										<span class="date">2018-11-11</span>
-										<h4>주식액면분할에 따른 주권제출공고</h4>
-										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
-										<a href="#">more</a>
+						<div class="board">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide main">
+									<div>
+										<div class="contents">
+											<span class="category">News</span>
+											<span class="date">2018-11-11</span>
+											<h4>주식액면분할에 따른 주권제출공고</h4>
+											<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
+											<a href="#">more</a>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide main">
-								<div>
-									<div class="contents">
-										<span class="category">News</span>
-										<span class="date">2018-11-11</span>
-										<h4>주식액면분할에 따른 주권제출공고</h4>
-										<p>주주께서는 이 공고 게재일로부터 1월 내에 본사에 연락하여 주시기 바랍니다.</p>
-										<a href="#">more</a>
-									</div>
-								</div>
-							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
 					</div>
 				</div>
 			</div>
@@ -345,7 +380,7 @@
 							<h4>Contact Us</h4>
 							<dl>
 								<dt><img src="./images/ico-pin.png" alt=""></dt>
-								<dd>대전시 유성구 대학로 291 카이스트<br />W8 2층 스타트업 스튜디오</dd>
+								<dd>대전시 유성구 대학로 291 카이스트 W8 2층 스타트업 스튜디오</dd>
 							</dl>
 							<dl>
 								<dt><img src="./images/ico-mail.png" alt=""></dt>
@@ -365,7 +400,7 @@
 				</div>
 			</div>
 
-			<div class="map" id="map-canvas" style="height:538px; width:100%;"></div>
+			<div class="map" id="map-canvas"></div>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrcX-latFkKTJSszff32MndcyeirgLmpo&callback=initialize"
 			 async defer></script>
 		</div>
