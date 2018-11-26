@@ -86,8 +86,45 @@
 			})
 
 			
+			$('.gnb li').on('click' , 
+				function slideScroll(){
+					var idx= $(this).index() -1 ;
+					var sectionIdx = $('#container > div ')
+					var topH = $('#container > div ').eq(idx).offset().top
+					if( idx === -1 ){
+						$('html, body ').stop().animate({
+							scrollTop : 0
+						})	
+					} else {
+						$('html, body ').stop().animate({
+							scrollTop : sectionIdx.eq(idx).offset().top -70,
+						})
+					}
+				}
+			)
+			$('#nav ul li').on('click' , 
+				function slideScroll(){
+					var idx= $(this).index();
+					var sectionIdx = $('#container > div ')
+					var topH = $('#container > div ').eq(idx).offset().top
+					if( idx === 0 ){
+						$('html, body ').stop().animate({
+							scrollTop : 0
+						})	
+					} else {
+						$('html, body ').stop().animate({
+							scrollTop : sectionIdx.eq(idx).offset().top
+						})
+					}
+				}
+			)
+			$('#nav ul li').on('click' , function(){
+			$(this).parents("#nav").toggleClass('active')
 		});
+		
 
+
+		})
 		function initialize() {
 			var mapLocation = new google.maps.LatLng('36.369965', '127.359938'); // 지도에서 가운데로 위치할 위도와 경도
 			var markLocation = new google.maps.LatLng('36.369965', '127.359938'); // 마커가 위치할 위도와 경도
