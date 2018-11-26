@@ -110,12 +110,13 @@
 .layerPop .contents {
 	padding: 50px;
     background: #fff;
-    width: 600px;
+    width: 800px;
     position: absolute;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom:100px;
 }
 .layerPop .btn_close {
 	position: absolute;
