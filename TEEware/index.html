@@ -72,14 +72,17 @@
 			winScroll();
 
 			// more Click 
-			$('.btn_more').on('click' , function(){
+			$('.btn_more').on('click' , function(e){
+				e.preventDefault();
 				var layHeight = $(document).height();
 				$('.layerPop').toggleClass('active')
-				$('.layerPop').height(layHeight)
+				$('body').css('overflow' , 'hidden');
 			})
 			// close pop
-			$('.btn_close').on('click' , function(){
-				$('.layerPop').toggleClass('active')
+			$('.btn_close').on('click' , function(e){
+				e.preventDefault();
+				$('.layerPop').toggleClass('active');
+				$('body').css('overflow' , 'inherit');
 			})
 			$('.menu').on('click' , function(){
 				$('#nav').toggleClass('active');
