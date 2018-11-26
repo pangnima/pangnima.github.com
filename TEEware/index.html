@@ -70,18 +70,17 @@
 				}
 			}
 			winScroll();
-			layerPop();
 
 			// more Click 
 			$('.btn_more').on('click' , function(){
+				var layHeight = $(document).height();
 				$('.layerPop').toggleClass('active')
+				$('.layerPop').height(layHeight)
 			})
 			// close pop
 			$('.btn_close').on('click' , function(){
 				$('.layerPop').toggleClass('active')
 			})
-
-			
 			$('.menu').on('click' , function(){
 				$('#nav').toggleClass('active');
 			})
@@ -123,21 +122,6 @@
 			});
 
 			infowindow.open(map, marker);
-		}
-
-
-		// 레이어팝업
-		function layerPop() {
-			var layerPopH = $('.layerPop').height();
-			if( layerPopH > 599 ){
-				$('.layerPop .inner').css({
-					overflowY: 'scroll'
-				})
-			} else {
-				$('.layerPop .inner').css({
-					overflowY: 'scroll'
-				})
-			}
 		}
 </script>
 </head>

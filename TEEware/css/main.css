@@ -105,12 +105,10 @@
 
 .gm-ui-hover-effect {top:50% !important; transform:translateY(-50%);}
 
-.layerPop {display:none; overflow:hidden; position: fixed;; top:0px; left:0; width:100%; height:100%; z-index:100;}
-.layerPop:before {content:"";position: fixed; background: rgba(0,0,0,0.3); width:100%; height:100%;}
+.layerPop {display:none; position:absolute; top:0px; left:0; width:100%; height:100%; z-index:300;  background: rgba(0,0,0,0.3);}
 .layerPop.active {display:block;}
-.layerPop .contents {padding:130px; background: #fff; width:1070px; overflow: hidden; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); height:800px; box-sizing: border-box; position: relative; overflow-y: scroll;}
+.layerPop .contents {padding:130px; background: #fff; width:1070px; position: absolute; top:100px; left:50%; transform: translateX(-50%); box-sizing: border-box;}
 .layerPop .btn_close {position:absolute; top:50px; right:50px; background:url("../images/btn_close.png") 0 0 no-repeat; width:45px; height:45px; font:0/0 a; cursor:pointer;}
-/* .layerPop .inner img {width:100%; height:300px;} */
 .layerPop .inner p {margin-top:10px; padding-bottom:20px; line-height:1.6; letter-spacing:-0.5px; font-size:16px;}
 
 
@@ -213,5 +211,10 @@
 	#footer .logo {position:absolute; top:50%; left:0; transform:translateY(-50%);}
 	#footer .logo a {display:block; width:73px; height:23px; font:0/0 a;}
 	#footer p {color:#ccc; line-height:42px; letter-spacing:-0.5px; text-align:right; font-size:10px; font-weight:normal;}
+	
 	.map {height:300px;}
+
+	.layerPop .contents {padding:0; width:100%; top:0;}
+	.layerPop .contents img {width:100%;}
+	.layerPop .btn_close {position:absolute; top:15px; right:15px; background:url("../images/btn_close.png") 0 0 no-repeat; background-size:cover; width:20px; height:20px; font:0/0 a; cursor:pointer;}
 }
