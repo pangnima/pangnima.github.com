@@ -53,7 +53,7 @@
 #container div.notice .inner {margin:0 auto;}
 #container div.notice .inner .boardSlide {float:left;}
 #container div.notice .inner .boardSlide > div {float:left; position:relative; height:298px;}
-#container div.notice .news {overflow:hidden; width:527px; float:left; height:298px; position: relative;}
+#container div.notice .news {float:left; overflow:hidden; position:relative; width:527px; height:298px;}
 #container div.notice .news .swiper-slide > div {background:url("../images/bg_slide.jpg") 0 0 no-repeat; height:100%;}
 #container div.notice .swiper-slide .contents {position:relative; height:100%; padding:30px 40px 24px; box-sizing:border-box;}
 #container div.notice .swiper-slide .contents .category {color:#1e90ff; font-size:16px;}
@@ -87,14 +87,14 @@
 #container div.contact ul li:last-child {width:368px;}
 #container div.contact ul li dl {margin-bottom:35px;}
 #container div.contact ul li dl dt {display:inline-block; width:30px; text-align:center; vertical-align:middle;;}
-#container div.contact ul li dl dd {display:inline-block; font-size:16px;}
+#container div.contact ul li dl dd {display:inline-block; width:280px; font-size:16px;}
 
 #container div.contact ul li form {text-align:right;}
 #container div.contact ul li input {background:#ececec; width:100%; height:50px; margin-bottom:10px; border:0; box-sizing:border-box; color:#545454; text-indent:20px; font-size:16px;}
 #container div.contact ul li textarea {background:#ececec; width:100%; height:200px; padding:20px; border:0; box-sizing:border-box; color:#545454; font-family:"Noto Sans KR", sans-serif; font-size:16px; resize:none;}
 #container div.contact ul li button {background:#1e90ff; width:106px; height:37px; margin-top:8px; color:#fff; text-align:center; font-size:16px;}
 
-.map {height:538px; width:100%;}
+.map {width:100%; height:538px;}
 
 #footer {background:#29293a;}
 #footer .inner {position:relative; width:1152px; height:93px; margin:0 auto;}
@@ -105,35 +105,15 @@
 
 .gm-ui-hover-effect {top:50% !important; transform:translateY(-50%);}
 
-.layerPop {display:none; position: fixed; top:0px; left:0; width:100%; height:100%; z-index:300;  background: rgba(0,0,0,0.3);}
+.layerPop {display:none; position:fixed; top:0; left:0; background:rgba(0,0,0,0.3); width:100%; height:100%; z-index:300;}
 .layerPop.active {display:block; overflow-y:scroll;}
-.layerPop .contents {
-	padding: 70px;
-    background: #fff;
-    width: 800px;
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-	margin-bottom:100px;
-}
-.layerPop .btn_close {
-	position: absolute;
-    top: 20px;
-    right: 20px;
-    background: url(../images/btn_close.png) 0 0 no-repeat;
-    width: 40px;
-    height: 40px;
-    font: 0/0 a;
-    cursor: pointer;
-    background-size: cover;
-}
+.layerPop .contents {position:absolute; top:120px; left:50%; background:#fff; width:800px; margin-bottom:100px; padding:70px; transform:translateX(-50%);}
+.layerPop .btn_close {position:absolute; top:20px; right:20px; background:url(../images/btn_close.png) 0 0 no-repeat; background-size:cover; width:40px; height:40px; font:0/0 a; cursor:pointer;}
 .layerPop .inner p {margin-top:10px; padding-bottom:20px; line-height:1.6; letter-spacing:-0.5px; font-size:16px;}
 
 
 
-@media all and (max-width: 640px) {
-	#wrap {width:100%; min-width:320px;}
+@media all and (max-width: 640px) {#wrap {width:100%; min-width:320px;}
 	.pcHeader {display:none;}
 	.mbHeader {display:block;}
 	.mbHeader #header {position:relative; background:#29293a; width:100%; min-width:320px; height:56px; margin:0 auto;}
@@ -159,23 +139,23 @@
 	#container div.about {background:#fff; padding-bottom:23px;}
 	#container div.about p {padding:0; color:#555; line-height:1.4; font-size:13px;}
 
-	#container div.vision {background:#f5f5f5; padding-bottom:30px; height:auto;}
+	#container div.vision {background:#f5f5f5; height:auto; padding-bottom:30px;}
 	#container div.vision h3 {padding-top:30px;}
-	#container div.vision ul {width:100%; min-width: 320px;}
-	#container div.vision ul li {display:flex; float:none; padding:15px 0; text-align:left; align-items:center; justify-content:space-between; width:100%;} 	
-	#container div.vision ul li:nth-child(2) {margin:0; width:100%;}
+	#container div.vision ul {width:100%; min-width:320px;}
+	#container div.vision ul li {display:flex; float:none; width:100%; padding:15px 0; text-align:left; align-items:center; justify-content:space-between;} 	
+	#container div.vision ul li:nth-child(2) {width:100%; margin:0;}
 	#container div.vision ul li:last-child {width:100%;}
 	#container div.vision ul li div {min-height:auto; flex:0 0 60%;}
 	#container div.vision ul li div.imgBox {flex:0 0 30%;}
-	#container div.vision ul li div.imgBox img {display:block; width:100%; margin:0 auto; max-width: 120px;}
+	#container div.vision ul li div.imgBox img {display:block; width:100%; max-width:120px; margin:0 auto;}
 	#container div.vision ul li div h4 {margin-bottom:5px; font-size:16px;}
 	#container div.vision ul li div p {margin:0; padding:0; font-size:13px;}
 	#container div.vision ul li div span {font-size:13px;}
 
-	#container div.partners {background:url("../images/mobile/bg_partner.jpg") 0 0 no-repeat; background-size:cover; min-height:155px; padding:0; padding-bottom:20px; padding-top:40px;}
+	#container div.partners {background:url("../images/mobile/bg_partner.jpg") 0 0 no-repeat; background-size:cover; min-height:155px; padding:0; padding-top:40px; padding-bottom:20px;}
 	#container div.partners h3 {color:#fff;}
 	#container div.partners p {width:305px; margin:0 auto; margin-top:-10px; color:#fff; letter-spacing:-0.5px; text-align:center; font-size:11px;}
-	#container div.partners ul {display:flex; margin:15px auto 0; justify-content:space-between; width:90%; min-width: 320px;}
+	#container div.partners ul {display:flex; width:90%; min-width:320px; margin:15px auto 0; justify-content:space-between;}
 	#container div.partners ul li {margin:0; padding:0; flex:0 0 18%;}
 	#container div.partners ul li img {width:100%;}
 
@@ -196,7 +176,7 @@
 
 	#container div.notice .inner .boardSlide {display:flex; width:100%; min-width:320px; height:auto; margin-top:10px; justify-content:space-between;}
 
-	#container div.notice .inner .boardSlide .board {overflow:hidden; position:relative; background:#fff; height:auto; margin:0; flex:0 0 49.5%; height:auto;}
+	#container div.notice .inner .boardSlide .board {overflow:hidden; position:relative; background:#fff; height:auto; height:auto; margin:0; flex:0 0 49.5%;}
 
 	#container div.notice  .inner .board .swiper-slide > div {height:100%; flex:0 0 49%;}
 	#container div.notice  .inner .board .swiper-slide .contents .category {color:#1e90ff; font-size:12px;}
@@ -210,14 +190,14 @@
 	#container div.notice .inner .board .swiper-button-next {top:10px; right:10px; background:url(../images/mobile/btn_next.jpg) 0 0 no-repeat; background-size:20px 20px; width:20px; height:20px; margin:0;}
 
 	#container div.contact {background:#fff;}
-	#container div.contact ul li {padding-bottom:20px; width:100%;}
-	#container div.contact ul li:nth-child(2){margin:0;}
-	#container div.contact ul li:last-child{width:100%;}
+	#container div.contact ul li {width:100%; padding-bottom:20px;}
+	#container div.contact ul li:nth-child(2) {margin:0;}
+	#container div.contact ul li:last-child {width:100%;}
 	#container div.contact ul li h4 {margin-bottom:15px; font-size:15px;}
 	#container div.contact ul li dl {margin:0; margin-bottom:10px;}
 	#container div.contact p {color:#545454; font-size:13px;}
-	#container div.contact dl {display:flex; margin-top:10px; color:#545454; font-size:13px; align-items:center; margin-bottom:30px;}
-	#container div.contact dl dt {margin-right:5px; text-align:center; flex:0 0 15px; font-size:12px;}
+	#container div.contact dl {display:flex; margin-top:10px; margin-bottom:30px; color:#545454; font-size:13px; align-items:center;}
+	#container div.contact dl dt {margin-right:5px; text-align:center; font-size:12px; flex:0 0 15px;}
 	#container div.contact dl dd {letter-spacing:-1px; font-size:12px !important;}
 
 	#container div.contact ul li form {text-align:right;}
@@ -233,7 +213,6 @@
 	
 	.map {height:300px;}
 
-	.layerPop .contents {padding:0; width:100%; top:0;}
+	.layerPop .contents {top:0; width:100%; padding:0;}
 	.layerPop .contents img {width:100%;}
-	.layerPop .btn_close {position:absolute; top:15px; right:15px; background:url("../images/btn_close.png") 0 0 no-repeat; background-size:cover; width:20px; height:20px; font:0/0 a; cursor:pointer;}
-}
+	.layerPop .btn_close {position:absolute; top:15px; right:15px; background:url("../images/btn_close.png") 0 0 no-repeat; background-size:cover; width:20px; height:20px; font:0/0 a; cursor:pointer;}}
