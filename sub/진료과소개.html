@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- css -->
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="/css/sub.css">
+
+	<!-- 인클루드용 js -->
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+	<script src="/js/swiper.min.js"></script>
+
+	<!-- js -->
+	<script src="/js/jquery-3.4.0.min.js"></script>
+	<script src="/js/main.js"></script>
+	<title>진료과목</title>
+
+	<script>
+		$(document).ready(function(){
+			init.slideMenu();
+			init.clinicImg();
+			init.subSlide();
+		})
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 헤더 인클루드 -->
+		<div w3-include-html="/include/header.html"></div>
+		<!-- //헤더 인클루드 -->
+		
+		<div class="navigater">
+			<div class="inner">
+				<ul>
+					<li><a href="/">홈</a></li>
+					<li><a href="#">진료안내</a></li>
+					<li><a href="#">진료과목</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="clinic">
+				<div class="sub_visual">
+					<img src="/images/subvisual/clinic.jpg" alt="진료과목">
+				</div>
+				<div class="clinic_list">
+					<ul>
+						<li class="active">
+							<a href="#">
+								<p>한방진료부<span>Korean Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>소화기내과<span>Gastroenterology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>심장내과<span>Cardiology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>신장내과<span>Nephrology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>호흡기내과<span>Pulmonology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>이비인후과<span>Otorhinolaryngology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>소아청소년과<span>Pediatrics</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>산부인과<span>Obstetrics<br/>& Gynecology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>신경외과<span>Neurosurgery</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>정형외과<span>Orthopedics</span></p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<p>외과<span>General Surgery</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>유방·갑상선외과<span>Breast / Thyroid<br/>Internal Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>비뇨기과<span>Urology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>신경과<span>Neurology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>재활의학과<span>Rehabilitation<br/>Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>정신건강의학과<span>Psychiatry</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>통합기능내과<span>Intergrative Functional<br/>Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>가정의학과<em>(피부,비만)</em><span>Family Medicine<br/>(Skin·Obesity)</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>응급의학과<span>Emergency Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>마취통증의학과<span>Anesthesiology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>영상의학과<span>Radiology</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>진단검사의학과<span>Laboratory<br/>Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>직업환경의학과<span>Occupational&<br/>Environmental<br/>Medicine</span></p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>예방의학과<span>Preventive Medicine</span></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 헤더 인클루드 -->
+		<div w3-include-html="/include/footer.html"></div>
+		<!-- //헤더 인클루드 -->
+	</div>
+	<script>
+		w3.includeHTML();
+	</script>
+</body>
+</html>

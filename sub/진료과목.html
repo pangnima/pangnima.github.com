@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- css -->
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="/css/sub.css">
+
+	<!-- 인클루드용 js -->
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+	<script src="/js/swiper.min.js"></script>
+
+	<!-- js -->
+	<script src="/js/jquery-3.4.0.min.js"></script>
+	<script src="/js/main.js"></script>
+	<title>진료과목</title>
+
+	<script>
+		$(document).ready(function(){
+			init.slideMenu();
+			init.subSlide();
+		})
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 헤더 인클루드 -->
+		<div w3-include-html="/include/header.html"></div>
+		<!-- //헤더 인클루드 -->
+		
+		<div class="navigater">
+			<div class="inner">
+				<ul>
+					<li><a href="/">홈</a></li>
+					<li><a href="#">진료안내</a></li>
+					<li><a href="#">진료과목</a></li>
+					<li><a href="#">심장내과</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="clinic_intro">
+
+				<div class="clinic_info">
+					<div class="imgBox">
+						<img src="/images/clinicimg/cardiology.jpg" alt="심장내과">
+					</div>
+					<div>
+						<h2>진료과 소개</h2>
+						<dl>
+							<dt>심장내과</dt>
+							<dd>서구화된 식생활로 심장질환의 발병률이 지속적으로 증가하는 가운데, 심장내과에서는</br>
+								고혈압, 고지혈증, 협심증 등 심혈관 질환을 진단하며 치료합니다.<br/>
+								특히 심근경색 등 혈관이 좁아지거나 막힌 혈관을 넓히는 중재시술을 시행하고 있습니다.</dd>
+						</dl>
+					</div>
+				</div>
+
+				<div class="clinic_docter">
+					<ul class="clinic_doc_list">
+						<li>
+							<div class="doc_profile">
+								<div class="profile_img">
+									<img src="/images/profile/1.jpg" alt="">
+								</div>
+								<div>
+									<strong class="name">박일 과장</strong>
+									<dl>
+										<dt>진료분야</dt>
+										<dd>심장혈관중재시술/허혈성 심질환(협심증,심근경색)/말초혈관질환
+												고혈압/고지혈증/심부전/부정맥/폐동맥고혈압</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="btn_box">
+								<button type="button" class="btn_like"><span>좋아요</span></button>
+								<button type="button" class="btn_detail"><span>상세보기</span></button>
+								<button type="button" class="btn_schedule"><span>진료예약</span></button>
+							</div>
+							<div class="doc_schedule">
+								<table>
+									<tr>
+										<th>구분</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+									</tr>
+									<tr>
+										<td>오 전</td>
+										<td>내시경</td>
+										<td>수술</td>
+										<td>내시경</td>
+										<td>진료</td>
+										<td>격주진료</td>
+										<td>수술</td>
+									</tr>
+									<tr>
+										<td>오 후</td>
+										<td>진료</td>
+										<td>순환</td>
+										<td>격주진료</td>
+										<td>격주진료</td>
+										<td>순환</td>
+										<td>내시경</td>
+									</tr>
+								</table>
+								<p>진료시간은 진료과장님들의 응급수술이나, 시술로 인해 변경될 수 있사오니<br/>외래로 확인 후 내원하시면 편리하게 진료 받으실 수 있습니다.</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="doc_profile">
+								<div class="profile_img">
+									<img src="/images/profile/2.jpg" alt="">
+								</div>
+								<div>
+									<strong class="name">박일 과장</strong>
+									<dl>
+										<dt>진료분야</dt>
+										<dd>심장혈관중재시술/허혈성 심질환(협심증,심근경색)/말초혈관질환
+												고혈압/고지혈증/심부전/부정맥/폐동맥고혈압</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="btn_box">
+								<button type="button" class="btn_like"><span>좋아요</span></button>
+								<button type="button" class="btn_detail"><span>상세보기</span></button>
+								<button type="button" class="btn_schedule"><span>진료예약</span></button>
+							</div>
+							<div class="doc_schedule">
+								<table>
+									<tr>
+										<th>구분</th>
+										<th>월</th>
+										<th>화</th>
+										<th>수</th>
+										<th>목</th>
+										<th>금</th>
+										<th>토</th>
+									</tr>
+									<tr>
+										<td>오 전</td>
+										<td>내시경</td>
+										<td>수술</td>
+										<td>내시경</td>
+										<td>진료</td>
+										<td>격주진료</td>
+										<td>수술</td>
+									</tr>
+									<tr>
+										<td>오 후</td>
+										<td>진료</td>
+										<td>순환</td>
+										<td>격주진료</td>
+										<td>격주진료</td>
+										<td>순환</td>
+										<td>내시경</td>
+									</tr>
+								</table>
+								<p>진료시간은 진료과장님들의 응급수술이나, 시술로 인해 변경될 수 있사오니<br/>외래로 확인 후 내원하시면 편리하게 진료 받으실 수 있습니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 헤더 인클루드 -->
+		<div w3-include-html="/include/footer.html"></div>
+		<!-- //헤더 인클루드 -->
+	</div>
+	<script>
+		w3.includeHTML();
+	</script>
+</body>
+</html>
