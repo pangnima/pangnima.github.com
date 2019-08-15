@@ -1,0 +1,66 @@
+
+@font-face {
+	font-family:"Noto Sans KR"; 
+	font-style:normal; 
+	src:url(../fonts/NotoSansCJKkr-Regular.otf.eot) format("eot"),
+	url(../fonts/NotoSansCJKkr-Regular.otf) format("otf"),
+	url(../fonts/NotoSansCJKkr-Regular.woff) format("woff"),
+	url(../fonts/NotoSansCJKkr-Regular.woff2) format("woff2"),
+	url(../fonts/NotoSansCJKkr-Regular.svg) format("svg");
+}
+
+@font-face {
+	font-family:"Noto Sans JP"; 
+	font-style:normal; 
+	src:url(../fonts/noto-sans-jp-v23-japanese_latin-regular.eot) format("eot"),
+	url(../fonts/noto-sans-jp-v23-japanese_latin-regular.woff2) format("woff2"),
+	url(../fonts/noto-sans-jp-v23-japanese_latin-regular.woff) format("woff2"),
+	url(../fonts/noto-sans-jp-v23-japanese_latin-regular.svg) format("svg");
+}
+
+@font-face {
+	font-family:"Roboto"; 
+	font-style:normal; 
+	font-weight:500;
+	src:url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-reular.eot) format("eot"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-reular.ttf) format("ttf"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-reular.woff) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-reular.woff2) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-reular.svg) format("svg");
+}
+
+
+@font-face {
+	font-family:"Roboto"; 
+	font-style:normal; 
+	font-weight:500;
+	src:url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-500.eot) format("eot"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-500.ttf) format("ttf"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-500.woff) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-500.woff2) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-500.svg) format("svg");
+}
+
+
+@font-face {
+	font-family:"Roboto"; 
+	font-style:normal; 
+	font-weight:700;
+	src:url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-700.eot) format("eot"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-700.ttf) format("ttf"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-700.woff) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-700.woff2) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-700.svg) format("svg");
+}
+
+
+@font-face {
+	font-family:"Roboto"; 
+	font-style:normal; 
+	font-weight:900;
+	src:url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-900.eot) format("eot"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-900.ttf) format("ttf"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-900.woff) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-900.woff2) format("woff2"),
+	url(../fonts/roboto-v19-greek_vietnamese_latin-ext_greek-ext_cyrillic_cyrillic-ext_latin-900.svg) format("svg");
+}
