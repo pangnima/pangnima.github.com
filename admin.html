@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>관리자</title>
+
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+
+	<!-- 슬라이드 -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	
+	<link rel="stylesheet" href="./css/admin.css">
+
+	<script src="./js/admin.js"></script>
+	
+</head>
+
+<body>
+	<div id="wrap">
+		<nav>
+			<h1 class="logo"><a href="#"><img src="./images/new_logo.svg" alt="로고"></a></h1>
+			<ul>
+				<li class="active"><a href="#"><span>기본관리</span></a></li>
+				<li><a href="#"><span>기업정보 입력</span></a></li>
+				<li><a href="#"><span>담당자정보 입력</span></a></li>
+				<li><a href="#"><span>입점사 상세정보 입력</span></a></li>
+				<li><a href="#"><span>배송정책 입력</span></a></li>
+			</ul>
+			<div class="btn-box">
+				<a href="#" class="btn-download">셀러허브 자료 다운로드</a>
+				<a href="#" class="btn-video">판매자 교육영상 보기</a>
+			</div>
+		</nav>
+
+		<div id="container">
+			<!-- 헤더 -->
+			<div class="dep-header">
+				<div>
+					<ul class="dep-menu">
+						<li class="active"><a href="#">기본관리</a></li>
+						<li><a href="#">주문</a></li>
+						<li><a href="#">정산</a></li>
+						<li><a href="#">상품</a></li>
+						<li><a href="#">게시판</a></li>
+						<li><a href="#">연동현황</a></li>
+						<li><a href="#">통계데이터</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<ul class="detail-menu">
+						<li><a href="#"><img src="./images/gnb_db.png" alt="DB전송하기"></a>
+							<ul class="layer">
+								<li><a href="#">6PM 상품DB 수집</a></li>
+								<li><a href="#">고도몰5 상품DB 전송</a></li>
+								<li><a href="#">이나무 상품DB 전송</a></li>
+								<li><a href="#">카페24 상품DB 전송</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><img src="./images/badge_beta.png" alt="">&nbsp;셀러 전용 폐쇄형 복지몰 <span>셀러허브샵</span></a></li>
+						<li class="alarm on"><a href=""><img src="./images/icbtn_noti.png" alt="알림"></a></li>
+						<li><a href="#"><img src="./images/icbtn_gnb_details.png" alt="더보기"></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 헤더 -->
+
+			<!--  -->
+			<div class="contents">
+				<div class="content-info notice double"><a href="#"><strong>[공지]</strong>상품 승인 일정 변경 안내</a><span>2019.6.17</span></div>
+				<div class="content-info recommend double"><a href="#"><strong>[추천]</strong>상품명 검색 최적화</a><span>2019.6.17</span></div>
+				<div class="content-info">
+					<div class="product-info order">
+						<h3 class="title">주문현황</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<dl>
+							<dt>신규주문</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>배송준비 중</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>배송중</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>배송완료</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<!--  -->
+						<div class="layer-pop">
+							<dl>
+								<dt>신규주문</dt>
+								<dd>주문상 상태이나 실 결제가 이루어지지 않은 상태
+									(예, 무통장 결제 후 아직 미입금인 상태)</dd>
+							</dl>
+							<dl>
+								<dt>배송준비 중</dt>
+								<dd>입금확인이 된 주문건 관련 입점사에서 발송가능한
+										상품을 주문 확인한 상태</dd>
+							</dl>
+							<dl>
+								<dt>배송중</dt>
+								<dd>택배사 송장이 등록되어 상품이 배송 중인 상태</dd>
+							</dl>
+							<dl>
+								<dt>배송완료</dt>
+								<dd>배송된 상품을 고객이 인수완료한 상태</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="content-info">
+					<div class="product-info cancel">
+						<h3 class="title">취소/반품/환불</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<dl>
+							<dt>반품요청</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>환불접수</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>환불완료</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>누적환불 완료 건</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>취소완료</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="content-info">
+					<div class="product-info regist">
+						<h3 class="title">상품등록 현황</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<dl>
+							<dt>총 등록된 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>승인 전 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>승인 요청 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>승인 완료 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>반려된 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>판매중인 상품</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="content-info">
+					<div class="product-info interlock">
+						<h3 class="title">연동현황</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+
+						<div>
+							<div class="select-box">
+								<p>품절 및 비노출 상품 연동 성공율</p>
+								<ul>
+									<li>연동성공율</li>
+									<li>판매중 상품 연동 성공율</li>
+								</ul>
+							</div>
+							<div class="progrees-box">
+								<strong>92.32<span>%</span></strong>
+								<div class="progress-bar">
+									<span style="width:92.32%" class="bar"></span>
+								</div>
+							</div>
+
+							<ul>
+								<li><strong>연동율?</strong> 상품별 연동성공 제휴몰 종합</li>
+								<li><strong>연동성공?</strong> 최송상품 수정일시 이후 해당 제휴몰 정산 연동</li>
+								<li>상품별 연동 제휴몰 종합</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-info">
+					<div class="product-info change">
+						<h3 class="title">상품교환</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<dl>
+							<dt>교환요청</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>수거완료</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>재배송 준비</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>재배송 중</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+						<dl>
+							<dt>교환완료</dt>
+							<dd><strong>999</strong>건</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="content-info">
+					<div class="product-info delay">
+						<h3 class="title">배송지연 현황</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<div>
+							<ul class="delay-step">
+								<li class="step-1">
+									1일차
+									<div>
+										<strong>99<span>건</span></strong>
+										<p>(99,000 원)</p>
+									</div>
+								</li>
+								<li class="step-2">
+									2일차
+									<div>
+										<strong>99<span>건</span></strong>
+										<p>(99,000 원)</p>
+									</div>
+								</li>
+								<li class="step-3">
+									3일차
+									<div>
+										<strong>99<span>건</span></strong>
+										<p>(99,000 원)</p>
+									</div>
+								</li>
+								<li class="step-4">
+									4일차
+									<div>
+										<strong>99<span>건</span></strong>
+										<p>(99,000 원)</p>
+									</div>
+								</li>
+							</ul>
+							<p>배송지연 패널티 예정 총 금액 : 999,999원</p>
+						</div>
+					</div>
+				</div>
+				<div class="content-info double">
+					<div class="product-info soldOut">
+						<h3 class="title">기간별 품절 지수</h3>
+						<div>
+							<div class="tab-box">
+								<button type="button">월 누적현황</button>
+								<button type="button" class='active'>주간 별 현황</button>
+							</div>
+							<div class="select-box">
+								<p>25주차</p>
+								<ul>
+									<li>26주차</li>
+									<li>27주차</li>
+									<li>28주차</li>
+								</ul>
+							</div>
+							<div class="progrees-box">
+								<strong>92.32<span>%</span></strong>
+								<div class="progress-bar">
+									<span style="width:92.32%" class="bar"></span>
+								</div>
+							</div>
+							<ul>
+								<li>부과 예정 품절 패널티 금액 : 99,999원</li>
+								<li>입점사 귀책 품절주문 99건 / 총 주문 999건</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product-info soldOut-cancel">
+						<h3 class="title">품절취소율 현황</h3>
+						<div>
+							<div class="warning">
+								<h4>현재 품절취소 경고 누적 현황 <span>2차경고</span> 상태입니다.</h4>
+								<p>적절한 재고관리로 품절취소를 개선해 주세요.</p>
+							</div>
+							<ul>
+								<li>2차 경고시기 : 27주차 (19.07.01~19.07.07)</li>
+								<li>2차 경고 시 품절율 : <strong>23.4%</strong></li>
+							</ul>
+						</div>
+						<a href="#" class="btn-warning">경고누적 상세현황 보기</a>
+					</div>
+				</div>
+				<div class="content-info calculate-wrap">
+					<div class="product-info calculate">
+						<h3 class="title">정산</h3>
+						<button type="button" class="btn-refresh">새로고침</button>
+						<div class="select-box">
+							<p>2019/07</p>
+							<ul>
+								<li>2019/07</li>
+								<li>2019/07</li>
+							</ul>
+						</div>
+						<div class="calculate-wrap">
+							<dl>
+								<dt>구매 확정금액</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>판매 정산금액</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>선불 배송비</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>공제 확정금액</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>- 배송지연 패널티</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>- 품절취소 패널티</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>공제 배송비</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>총 정산 예정 금액</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+							<dl>
+								<dt>공제 정산금액</dt>
+								<dd><strong>999</strong>원</dd>
+							</dl>
+						</div>
+
+						<ul class="fix-day">
+							<li>정산내역 확정일<span>2019.12.12</span></li>
+							<li>세금계산서 발행일<span>2019.12.12</span></li>
+							<li>정산대금 지급일<span>2019.12.12</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-info double">
+					<div class="product-info sales">
+						<h3 class="title">매출통계</h3>
+						<div class="tab-box">
+							<button type="button" class='active'>주문건수</button>
+							<button type="button">주문총액</button>
+						</div>
+						<div class="checkbox-wrap">
+							<div class="checkbox">
+								<input type="checkbox" id="totalOrder">
+								<label for="totalOrder">총 주문수</label>
+							</div>
+							<div class="checkbox orange">
+								<input type="checkbox" id="totalCancel">
+								<label for="totalCancel">취소/반품/환불 수</label>
+							</div>
+						</div>
+
+						<!-- 차트공간 -->
+						<div class="chart">
+							차트
+						</div>
+						<!--  // 차트  -->
+					</div>
+				</div>
+				<div class="content-info board-wrap">
+					<div class="product-info unAnswer">
+						<h3 class="title">미답변 문의</h3>
+						<ul class="board-tab">
+							<li class="active">고객문의<span>99</span></li>
+							<li>긴급문의<span>99</span></li>
+							<li>알림<span>99</span></li>
+						</ul>
+
+						<div class="board-item">
+							<h4>등록된 문의 내용이 없습니다.</h4>
+						</div>
+
+						<div class="board-item" style="display: none;">
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+							<dl>
+								<dt>[인터파크]</dt>
+								<dd>고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+									고객문의고객문의고객문의고객문의고객문의고객문의고객…
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-info double">
+					<div class="product-info notice">
+						<h3 class="title">운영 공지사항</h3>
+						<div class="notice-list">
+							<table>
+								<tr>
+									<th><a href="#"></a><strong>[공지]</strong>재고부족상품 주문 자동취소 기능 보완적용 안내</a></th>
+									<td>2019/07/09</td>
+								</tr>
+								<tr>
+									<th><a href="#"></a><strong>[공지]</strong>재고부족상품 주문 자동취소 기능 보완적용 안내</a></th>
+									<td>2019/07/09</td>
+								</tr>
+								<tr>
+									<th><a href="#"></a><strong>[공지]</strong>재고부족상품 주문 자동취소 기능 보완적용 안내</a></th>
+									<td>2019/07/09</td>
+								</tr>
+								<tr>
+									<th><a href="#"></a><strong>[공지]</strong>재고부족상품 주문 자동취소 기능 보완적용 안내</a></th>
+									<td>2019/07/09</td>
+								</tr>
+								<tr>
+									<th><a href="#"></a><strong>[공지]</strong>재고부족상품 주문 자동취소 기능 보완적용 안내</a></th>
+									<td>2019/07/09</td>
+								</tr>
+							</table>
+							<a href="#" class="all-view">전체보기</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="content-info board-wrap">
+					<div class="product-info board">
+						<h3 class="title">게시판</h3>
+						<ul class="board-tab">
+							<li class="active">판매자지원</li>
+							<li>자주묻는 FAQ</li>
+						</ul>
+
+						<div class="board-item">
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<a href="#" class="all-view">전체보기</a>
+						</div>
+						<div class="board-item" style="display: none;">
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<dl>
+								<dt>답변완료</dt>
+								<dd>셀러허브를 이용하면 매출이 실제로 발생하나요?
+									연결이 끊어졌습니다. 문제해결
+									옵션값 등록 가이드
+									CS 담당자 핸드폰 번호를 반드시 등록해 주세요.
+									가장 검색/노출이 잘되는 상품명 작성법
+								</dd>
+							</dl>
+							<a href="#" class="all-view">전체보기</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="content-info">
+					<div class="product-info ad">
+						<h3 class="title">마케팅 / 광고</h3>
+						<p>카페 24 고도몰 회원이신가요?</p>
+						<div class="swiper-container ad-slide">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="http://placehold.it/322x172" /></div>
+								<div class="swiper-slide"><img src="http://placehold.it/322x172" /></div>
+								<div class="swiper-slide"><img src="http://placehold.it/322x172" /></div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<a href="#" class="all-view">전체보기</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="soldOut-pop">
+		<div class="inner">
+			<button type="button" class="btn-close">닫기</button>
+			<div class="warning-text">
+				<h4>품절율 안내 및 판매중지 경고</h4>
+				<p>
+					지난 한 주간 품절율이 20%를 초과할 경우 경고 조치되며, 경고 횟수는 누적됩니다.<br>
+					- 4차 경고로 인한 판매중지 조치 이후에는 경고 누적수가 초기화 됩니다.
+				</p>
+				<p>
+					경고 횟수 3회 누적 후 4차 경고 시점부터 7일 간 전 상품이 판매중지 처리됩니다.<br>
+					문의사항이 있으실 경우 하단의 [이의제기]를 통해 문의 주시기 바랍니다.
+				</p>
+
+				<table>
+					<tr>
+						<th>지난주 품절율</th>
+						<td class="percent">40<span>%</span></td>
+					</tr>
+					<tr>
+						<th>적용기간</th>
+						<td>19.12.12 - 19.12.20</td>
+					</tr>
+					<tr>
+						<th>지난주 품절 / 주문 총건 수</th>
+						<td><strong>40</strong> / 100</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="issue">
+				<h4>각 쇼핑몰 품절 상황 발생 시</h4>
+				<p>
+					1. 모든 상품의 쇼핑몰 연동 자체가 정지될 수 있습니다.<br>
+					2. 품절 패널티가 발생할 수 있습니다.
+				</p>
+				<table>
+					<colgroup>
+						<col style="width:55px;">
+						<col>
+						<col style="width:157px;">
+						<col style="width:157px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>경고</th>
+							<th>품절율</th>
+							<th>품절 건 수 / 주문 총 건 수</th>
+							<th>판매기간</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><em>1차경고</em></td>
+							<td>25%</td>
+							<td><strong>400</strong> / 1000</td>
+							<td>27주차(19.01.28 - 19.02.03)</td>
+						</tr>
+						<tr>
+							<td><em>1차경고</em></td>
+							<td>25%</td>
+							<td><strong>400</strong> / 1000</td>
+							<td>27주차(19.01.28 - 19.02.03)</td>
+						</tr>
+						<tr>
+							<td><em>1차경고</em></td>
+							<td>25%</td>
+							<td><strong>400</strong> / 1000</td>
+							<td>27주차(19.01.28 - 19.02.03)</td>
+						</tr>
+						<tr>
+							<td><em>1차경고</em></td>
+							<td>25%</td>
+							<td><strong>400</strong> / 1000</td>
+							<td>27주차(19.01.28 - 19.02.03)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="btn-wrap">
+				<button type="button" class="close">닫기</button>
+				<button type="button">이의 제기하기</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
