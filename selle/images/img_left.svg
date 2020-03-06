@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217.004" height="232.143" viewBox="0 0 217.004 232.143">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2,.cls-3{opacity:.3}.cls-4{fill:#7c7c7c;opacity:.101}.cls-5,.cls-6{stroke:none}.cls-6{fill:#c7c7c7}.cls-7{filter:url(#합치기_4)}
+        </style>
+        <filter id="합치기_4" width="216.998" height="232.141" x=".004" y=".002" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur result="blur"/>
+            <feFlood flood-color="#454545" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="img_left__grey" data-name="img_left_#grey" transform="translate(-527.996 -3240.997)">
+        <g id="그룹_2168" class="cls-7" data-name="그룹 2168" transform="translate(528 3241)">
+            <g id="합치기_4-2" class="cls-1" data-name="합치기 4">
+                <path d="M6091.537-10878.36c-.349 0-.688-.123-.958-.347l-10.933-9.065-.139-.116H6060a1.5 1.5 0 0 1-1.499-1.5V-11102c0-.827.672-1.501 1.499-1.501H6273c.826 0 1.498.674 1.498 1.501v212.611a1.5 1.5 0 0 1-1.498 1.501h-169.435l-.14.116-10.932 9.065a1.497 1.497 0 0 1-.956.347z" class="cls-5" transform="translate(-6058 11104)"/>
+                <path d="M6091.537-10878.86a1 1 0 0 0 .637-.232l10.933-9.065.277-.23H6273a1 1 0 0 0 .998-1.002V-11102a1 1 0 0 0-.998-1.001h-213.001a1 1 0 0 0-.999 1.001v212.611a1 1 0 0 0 .999 1.001h19.689l.277.23 10.933 9.066c.18.15.407.232.64.232m0 1c-.454 0-.908-.155-1.278-.462l-10.933-9.066H6060a2 2 0 0 1-1.999-2V-11102a2 2 0 0 1 1.999-2.001H6273a2 2 0 0 1 1.998 2.001v212.611a2 2 0 0 1-1.998 2.001h-169.255l-10.932 9.066c-.37.307-.823.462-1.276.462z" class="cls-6" transform="translate(-6058 11104)"/>
+            </g>
+        </g>
+        <g id="그룹_2235" class="cls-2" data-name="그룹 2235" transform="translate(483 965.001)">
+            <path id="합치기_4-3" d="M6090.266-10878.316l-10.937-9.066H6060a2.012 2.012 0 0 1-2-2.016V-11102a2 2 0 0 1 2-2h213a2 2 0 0 1 2 2v212.605a2.012 2.012 0 0 1-2 2.016h-169.254l-10.937 9.066a1.969 1.969 0 0 1-1.27.453 1.979 1.979 0 0 1-1.273-.456z" class="cls-3" data-name="합치기 4" transform="translate(-6013 13380)"/>
+        </g>
+        <path id="사각형_1652" d="M0 0h192v14H0z" class="cls-4" data-name="사각형 1652" transform="translate(553 3273)"/>
+        <path id="사각형_1653" d="M0 0h192v14H0z" class="cls-4" data-name="사각형 1653" transform="translate(553 3301)"/>
+        <path id="사각형_1654" d="M0 0h192v14H0z" class="cls-4" data-name="사각형 1654" transform="translate(553 3329)"/>
+        <path id="사각형_1655" d="M0 0h192v14H0z" class="cls-4" data-name="사각형 1655" transform="translate(553 3357)"/>
+    </g>
+</svg>

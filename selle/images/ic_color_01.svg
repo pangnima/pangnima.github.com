@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#2c9eff}.cls-4{fill:#056fc9}.cls-5{fill:#fff}.cls-6{stroke:#2c9eff;stroke-linecap:round;stroke-miterlimit:10}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h38v38H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="ic_color_01" class="cls-2">
+        <rect id="사각형_12" width="38" height="38" class="cls-3" data-name="사각형 12" rx="19"/>
+        <g id="그룹_10" data-name="그룹 10" transform="translate(5 10)">
+            <path id="패스_261" d="M948.123 2127.431a1.976 1.976 0 0 1-1.951 2h-24.1a1.976 1.976 0 0 1-1.952-2 1.976 1.976 0 0 1 1.952-2h24.1a1.976 1.976 0 0 1 1.951 2z" class="cls-4" data-name="패스 261" transform="translate(-920.123 -2125.431)"/>
+            <path id="패스_262" d="M930.811 2145.431v-20h16v20" class="cls-5" data-name="패스 262" transform="translate(-924.811 -2125.431)"/>
+            <path id="선_1" d="M0 0h11.324" class="cls-6" data-name="선 1" transform="translate(8.5 5.576)"/>
+            <path id="선_2" d="M0 0h11.324" class="cls-6" data-name="선 2" transform="translate(8.5 10.036)"/>
+            <path id="선_3" d="M0 0h11.324" class="cls-6" data-name="선 3" transform="translate(8.5 14.496)"/>
+        </g>
+    </g>
+</svg>

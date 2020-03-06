@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+    <defs>
+        <style>
+            .cls-1{fill:#ffd800}.cls-2{fill:#3e3218}.cls-3{filter:url(#사각형_193)}
+        </style>
+        <filter id="사각형_193" width="78" height="78" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="icbtn_kakao" transform="translate(-1835 -815)">
+        <g id="그룹_622" class="cls-3" data-name="그룹 622" transform="translate(1835 815)">
+            <rect id="사각형_193-2" width="60" height="60" class="cls-1" data-name="사각형 193" rx="30" transform="translate(9 6)"/>
+        </g>
+        <g id="그룹_621" data-name="그룹 621" transform="translate(2.222 -64.964)">
+            <g id="그룹_586" data-name="그룹 586" transform="translate(1859.048 904.618)">
+                <path id="패스_396" d="M162.122-253.866c-7.085 0-12.849 4.529-12.849 10.1 0 3.377 2.183 6.555 5.737 8.414l-.922 3.171c-.258 1.11-.031 1.416.067 1.547a.789.789 0 0 0 .584.319h.085a1.142 1.142 0 0 0 .706-.243c.028-.02.06-.043.1-.068s.208-.121 4.752-3.138a16.538 16.538 0 0 0 1.738.092c7.085 0 12.849-4.529 12.849-10.1s-5.762-10.094-12.847-10.094z" class="cls-2" data-name="패스 396" transform="translate(-149.273 253.866)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+    <defs>
+        <style>
+            .cls-1{fill:#3565fc}.cls-2{fill:#fff}.cls-3{fill:#e0e0e0}.cls-4{filter:url(#사각형_193)}
+        </style>
+        <filter id="사각형_193" width="78" height="78" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="icbtn_counseling" transform="translate(-1835 -876)">
+        <g id="그룹_595" data-name="그룹 595" transform="translate(46 -101)">
+            <g class="cls-4" transform="translate(1789 977)">
+                <rect id="사각형_193-2" width="60" height="60" class="cls-1" data-name="사각형 193" rx="30" transform="translate(9 6)"/>
+            </g>
+            <path id="패스_395" d="M612.5 257.378h-20.978a1.713 1.713 0 0 0-1.713 1.713v20.976a1.713 1.713 0 0 0 1.713 1.713h13.432c8.973 0 9.257 4.606 9.257 4.606v-27.3a1.713 1.713 0 0 0-1.711-1.708z" class="cls-2" data-name="패스 395" transform="translate(1226.166 743.127)"/>
+        </g>
+        <rect id="사각형_743" width="16" height="2" class="cls-3" data-name="사각형 743" rx="1" transform="translate(1866 905)"/>
+        <rect id="사각형_1347" width="16" height="2" class="cls-3" data-name="사각형 1347" rx="1" transform="translate(1866 911)"/>
+        <rect id="사각형_1348" width="16" height="2" class="cls-3" data-name="사각형 1348" rx="1" transform="translate(1866 917)"/>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#c6c6c6}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h7v11H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="icbtn_arrow_line_m" class="cls-2">
+        <g id="small-down" transform="rotate(90 3.5 3.5)">
+            <path id="패스_26" d="M8.1 4.6l-5.5 5.559L4.026 11.6 8.1 7.482l4.074 4.118 1.426-1.441z" class="cls-3" data-name="패스 26" transform="translate(-2.6 -4.6)"/>
+        </g>
+    </g>
+</svg>

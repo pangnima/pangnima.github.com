@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="39" viewBox="0 0 123 39">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#1b1b1b}.cls-3,.cls-4{stroke:none}.cls-4{fill:#d5d5d5}
+        </style>
+    </defs>
+    <g id="lately_logo" transform="translate(-2904 -5117)">
+        <g id="패스_2670" class="cls-1" data-name="패스 2670">
+            <path d="M122.5 38.5H.5V.5h122v38z" class="cls-3" transform="translate(2904 5117)"/>
+            <path d="M1 1v37h121V1H1M0 0h123v39H0V0z" class="cls-4" transform="translate(2904 5117)"/>
+        </g>
+        <g id="그룹_1829" data-name="그룹 1829" transform="translate(2534.14 4648.703)">
+            <path id="패스_2671" d="M1720.39 480.023l-4.194 7.171-4.2-7.171h-2.5l5.431 9.443v6.459h2.539v-6.459l5.431-9.443z" class="cls-2" data-name="패스 2671" transform="translate(-1248.288)"/>
+            <g id="그룹_1825" data-name="그룹 1825" transform="translate(387.542 480.023)">
+                <path id="패스_2672" d="M390.1 493.85v-13.827h-2.563v15.9h10.266v-2.073z" class="cls-2" data-name="패스 2672" transform="translate(-387.542 -480.023)"/>
+            </g>
+            <g id="그룹_1826" data-name="그룹 1826" transform="translate(434.684 480.023)">
+                <path id="패스_2673" d="M1236.077 493.85v-4.84h7.993v-2.074h-7.993v-4.815h7.993v-2.1h-10.556v15.9h10.5v-2.071z" class="cls-2" data-name="패스 2673" transform="translate(-1233.515 -480.023)"/>
+            </g>
+            <g id="그룹_1827" data-name="그룹 1827" transform="translate(450.709 480.023)">
+                <path id="패스_2674" d="M1523.644 493.85v-13.827h-2.563v15.9h10.265v-2.073z" class="cls-2" data-name="패스 2674" transform="translate(-1521.081 -480.023)"/>
+            </g>
+            <g id="그룹_1828" data-name="그룹 1828" transform="translate(416.985 480.023)">
+                <path id="패스_2675" d="M915.9 480.023v2.1h5.289v13.8h2.563v-13.8h5.21v-2.1z" class="cls-2" data-name="패스 2675" transform="translate(-915.898 -480.023)"/>
+            </g>
+            <path id="패스_2676" d="M632 480.023h2.868l5.736 15.9h-2.633l-1.5-4.1h-6.091l-1.5 4.1h-2.657zm3.706 9.729l-2.288-6.232-2.288 6.232z" class="cls-2" data-name="패스 2676" transform="translate(-225.377)"/>
+        </g>
+    </g>
+</svg>
