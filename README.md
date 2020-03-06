@@ -1,4 +1,3 @@
----
 # AFreecaTV
 
 ## [개인 방송국 - http://bj.afreecatv.com/{userid}](http://bj.afreecatv.com/khm11903){: target="_blank"}
@@ -54,10 +53,9 @@ image-Sprite > svg-Sprite > dataURL 변환 SVG 적용
 - 단순 이벤트 페이지 반복 작업을 줄이고자 개발자와 협의를 통한 내용을 토대로 관리자 페이지에서 등록 가능한 템플릿 및 가이드 제작
 - vw( viewport width )를 이용한 반응형 템플릿 제작
 ```
----
-
 
 ---
+
 # 샤크로
 
 ## 천재교육 T-셀파 - e-Learning 제작 및 커스터마이징
@@ -80,13 +78,12 @@ image-Sprite > svg-Sprite > dataURL 변환 SVG 적용
 ## [기초학습능력검사](http://www.nise-test.com/){: target="_blank"}
 ## Bootstrap 템플릿을 이용한 관리자 페이지 제작
 ## 고도몰을 이용한 쇼핑몰 제작 운영
----
 
 ---
+
 # 윕스
 ## [윈텔립스](https://www.wintelips.com/){: target="_blank"}
 ```
 - 윈텔립스 고도화 작업
 - 윈텔립스 검색 UI 개선 작업
 ```
----
