@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="38" viewBox="0 0 112 38">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#3176ff}.cls-2{fill:#4e79ff;font-size:14px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700}.cls-3{stroke:none}.cls-4{fill:none}
+        </style>
+    </defs>
+    <g id="btn_gnb_login" transform="translate(-1318 -14)">
+        <g id="사각형_1411" class="cls-1" data-name="사각형 1411">
+            <path d="M0 0h112v38H0z" class="cls-3" transform="translate(1318 14)"/>
+            <path d="M.5.5h111v37H.5z" class="cls-4" transform="translate(1318 14)"/>
+        </g>
+        <text id="무료체험하기" class="cls-2" transform="translate(1374 39)">
+            <tspan x="-38.64" y="0">무료체험하기</tspan>
+        </text>
+    </g>
+</svg>
