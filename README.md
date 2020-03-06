@@ -1,3 +1,4 @@
+---
 # AFreecaTV
 
 ## [개인 방송국 - http://bj.afreecatv.com/{userid}](http://bj.afreecatv.com/khm11903){: target="_blank"}
@@ -23,9 +24,9 @@ image-Sprite > svg-Sprite > dataURL 변환 SVG 적용
 
 ## [VOD - http://vod.afreecatv.com](http://vod.afreecatv.com){: target="_blank"}
 ```
-	- VOD 페이지 고도화 작업 ( css 정리 및 타입변경 )
-	- VOD Player에 플레이리스트 추가
-	- SMR 카테고리 추가로 인한 신규 페이지 개설
+- VOD 페이지 고도화 작업 ( css 정리 및 타입변경 )
+- VOD Player에 플레이리스트 추가
+- SMR 카테고리 추가로 인한 신규 페이지 개설
 ```
 ## [멸망전통합페이지 - http://bjmatch.afreecatv.com](http://bjmatch.afreecatv.com){: target="_blank"}
 ```
@@ -53,29 +54,39 @@ image-Sprite > svg-Sprite > dataURL 변환 SVG 적용
 - 단순 이벤트 페이지 반복 작업을 줄이고자 개발자와 협의를 통한 내용을 토대로 관리자 페이지에서 등록 가능한 템플릿 및 가이드 제작
 - vw( viewport width )를 이용한 반응형 템플릿 제작
 ```
+---
 
+
+---
 # 샤크로
 
-## 디오플렉스
+## 천재교육 T-셀파 - e-Learning 제작 및 커스터마이징
+```
+- 저학년 교육용 컨텐츠 제작
+- 기존 구현된 기능을 커스터마이징해 타입별로 제공
+- 템플릿 제작을 위한 프로토 타입 제작
+```
+## 미래엔 교사용 컨텐츠 제작 - e-Learning 교사용 제작
+```
+- 교사용 컨텐츠 제작
+- 기존 구현된 기능 커스터마이징해 타입별로 제공
+```
 ## [디오플렉스](http://doplex.co.kr/){: target="_blank"}
-
-## 아성
 ## [아성](http://www.asunggroup.com/){: target="_blank"}
-## 아성HMP
 ## [아성HMP](http://www.asunghmp.com/){: target="_blank"}
-
-## 현대백화점 사회복지재단
-## [현대백화점사회복지재단](http://www.ehyundai.com/newPortal/sc/main/main.do){: target="_blank"}
-
-## 골프크리틱	## 골프크리틱
+## [VoiceMall](http://www.asunghmp.com/){: target="_blank"}
 ## [골프크리틱](https://pangnima.github.io/golfcritic){: target="_blank"}
-
-## 윌리엄홀딩스
-## [윌리엄홀딩스](https://pangnima.github.io/william){: target="_blank"}
-
-## 기초학습능력검사
+## [윌리엄홀딩스](http://www.williamholdings.co.kr){: target="_blank"}
 ## [기초학습능력검사](http://www.nise-test.com/){: target="_blank"}
+## Bootstrap 템플릿을 이용한 관리자 페이지 제작
+## 고도몰을 이용한 쇼핑몰 제작 운영
+---
 
-## 윈텔립스
+---
+# 윕스
 ## [윈텔립스](https://www.wintelips.com/){: target="_blank"}
-
+```
+- 윈텔립스 고도화 작업
+- 윈텔립스 검색 UI 개선 작업
+```
+---
