@@ -42,7 +42,7 @@ $(function () {
 	createFullpage();
 	var isVisible = false;
 
-	$(window).on('mousewheel DOMMouseScroll' , function(e){
+	$(window).on('mousewheel DOMMouseScroll touch' , function(e){
 		/* 덮어지는 액션 */
 		var scrollT =$(window).scrollTop()
 		if(scrollT > 5316){
