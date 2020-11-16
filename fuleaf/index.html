@@ -2,9 +2,8 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>테스트</title>
-	<!-- <link rel="stylesheet" href="./css/docSlider.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"">
+	<title>플립</title>
 	<link rel="stylesheet" href="./css/jquery.fullpage.css">
 	<link rel="stylesheet" href="./css/aos.css">
 	<link rel="stylesheet" href="./css/swiper.css">
@@ -454,7 +453,6 @@
 				$(this).siblings('.btn-search').addClass('isvisible')
 			})
 			$('.depth-2 .btn-search').on('click' ,function(){
-				console.log("DF")
 				setTimeout(function(){
 					filterSlide.slideNext()
 				},150)
