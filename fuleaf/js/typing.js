@@ -45,18 +45,18 @@
 	};
   
 	Unityping.prototype = {
-	  construction: Unityping,
-	  init: function() {
+		construction: Unityping,
+		init: function() {
 		var that = this;
 		for(var i=0, len=that.options.string.length; i<len; i++) {
-		  that.sq.push(that.sequencer(that.options.string[i]));
-		  that.sq[i].tplen = (function() {
-			var len = 0;
-			for(var j=0; j<that.sq[i].length; j++) {
-			  len += that.sq[i][j].length;
-			}
-			return len;
-		  })();
+			that.sq.push(that.sequencer(that.options.string[i]));
+			that.sq[i].tplen = (function() {
+				var len = 0;
+				for(var j=0; j<that.sq[i].length; j++) {
+					len += that.sq[i][j].length;
+				}
+				return len;
+			})();
 		}
   
 		setTimeout(function() {
@@ -87,12 +87,42 @@
 		  that.jq.attr('placeholder',that.written);
 		  //that.jq.append('<br>');
 		  
-		  var value = $('.typer').attr('placeholder');
-		  $('body').append('<div id="virtual_dom">' + value + '</div>'); 
-		  var inputWidth =  $('#virtual_dom').width() + 20; // 글자 하나의 대략적인 크기 
-		  $('.typer').css('width', inputWidth); 
-		  $('#virtual_dom').remove();
-  
+		  var wW = $(window).innerWidth();
+		  if(wW < 768 ){
+			var value = $('.typer').attr('placeholder');
+			$('body').append('<div id="virtual_dom">' + value + '</div>'); 
+			var inputWidth =  $('#virtual_dom').width() * 1.63// 글자 하나의 대략적인 크기 
+			$('.typer').css({
+				'width': inputWidth,
+			}); 
+			$('#virtual_dom').remove();
+		  } else {
+			  var value = $('.typer').attr('placeholder');
+			  $('body').append('<div id="virtual_dom">' + value + '</div>'); 
+			  var inputWidth =  $('#virtual_dom').width() + 40 // 글자 하나의 대략적인 크기 
+			  $('.typer').css('width', inputWidth); 
+			  $('#virtual_dom').remove();
+		  }
+
+		  $(window).resize(function(){
+			var wW = $(window).innerWidth();
+			if(wW < 768 ){
+			  var value = $('.typer').attr('placeholder');
+			  $('body').append('<div id="virtual_dom">' + value + '</div>'); 
+			  var inputWidth =  $('#virtual_dom').width() * 1.63// 글자 하나의 대략적인 크기 
+			  $('.typer').css({
+				  'width': inputWidth,
+			  }); 
+			  $('#virtual_dom').remove();
+			} else {
+				var value = $('.typer').attr('placeholder');
+				$('body').append('<div id="virtual_dom">' + value + '</div>'); 
+				var inputWidth =  $('#virtual_dom').width() + 40 // 글자 하나의 대략적인 크기 
+				$('.typer').css('width', inputWidth); 
+				$('#virtual_dom').remove();
+			}
+		  })
+
 		  // eachTyping callback
 		  that.options.eachTyping(that.written, that.pos);
   

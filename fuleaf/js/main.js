@@ -35,33 +35,29 @@ $(function () {
 
 	
 	var mySwiper = new Swiper('.swiper-container', {
-		// loop: true,
-		// slidesPerView: 'auto',
-		// width:214,
 		spaceBetween: 42,
 		breakpoints: {
 			320: {
-				slidesPerView: 1.5,
-				spaceBetween: 10
-			},
-			760: {
-				slidesPerView: 4,
+				slidesPerView: 214,
 				spaceBetween: 20
 			},
+			760: {
+				slidesPerView: 214,
+				spaceBetween: 50
+			},
 			960: {
-				slidesPerView: 'auto',
+				slidesPerView: 214,
 				spaceBetween: 42
 			}
 		}
 	})
 	var visionSlide = new Swiper('.vision-slide', {
-		// loop:true,
 		slidesPerView: 5,
 		spaceBetween: 33,
 	})
 
 	var filterSlide = new Swiper('.depth-slide', {
-		slidesPerView: 'auto',
+		slidesPerView: 1,
 		speed: 2000,
 		autoHeight:true,
 		noSwipingClass:'depth-slide'
@@ -167,7 +163,7 @@ $(function () {
 		$('.btn-search').addClass('isvisible');
 	})
 
-	var checkLen = 
+	var checkLen = null;
 	$(document).on('click', '.depth-3 .filter-item' , function(){
 		$(this).toggleClass('active');
 		checkLen = $('.depth-3 .filter-item.active').length;
@@ -177,46 +173,6 @@ $(function () {
 		filterSlide.slidePrev()
 	})
 
-	// 덮어지는 액션
-	// var overpage = function(e){
-	// 	if (e.originalEvent.wheelDelta < 0) {
-	// 		$.fn.fullpage.setMouseWheelScrolling(false);
-	// 		$.fn.fullpage.setKeyboardScrolling(false);
-	// 		$('body','html').css({overflow:'visible'})
-	// 		// 덮어지는 높이 측정
-	// 		var overPagePos = Math.abs($('.scroll-page').css('top').split('px')[0])
-	// 		var overPageHeight = $('.scroll-page').height()
-	// 		if( overPagePos < overPageHeight-200 ){
-	// 			$('.scroll-page').stop().animate({
-	// 				top: '-=200px'
-	// 			}, 250 ,"linear" );
-	// 		}
-	// 		var subTitleoffsetTop = $('[data-aos]');
-	// 		var st = $('.scroll-page').css('top').split('px')[0]
-	// 		var absSt = Math.abs(st);
-	// 		subTitleoffsetTop.each(function(index, item){
-	// 			if( item.offsetTop < absSt-300 ){
-	// 				$(this).addClass('aos-animate')
-	// 			}
-	// 		})
-	// 		$('#fp-nav').fadeOut('fast')
-	// 	}else {
-	// 		var topPos = $('.scroll-page').css('top').split('px')[0]
-	// 		// console.log( topPos >= 0)
-	// 		$('body','html').css({overflow:'hidden'})
-	// 		$('.scroll-page').stop().animate({
-	// 			top: '+=200'
-	// 		}, 250 , "linear" );
-	// 		if( topPos >= 0){
-	// 			$.fn.fullpage.setMouseWheelScrolling(true)
-	// 			$.fn.fullpage.setKeyboardScrolling(true);
-	// 			$('.scroll-page').css({top:0})
-	// 			$('#fp-nav').fadeIn('fast')
-	// 		}
-	// 	}
-	// }
-
-
 	$('#fullpage').fullpage({
 		anchors:['search', 'filter' ,'magazine-1','magazine-2','info'],
 		navigation: true,
@@ -225,13 +181,9 @@ $(function () {
 		responsiveHeight: 330,
 		sectionSelector:'.full-page-wrap',
 		scrolbar:true,
-
 		afterLoad: function(anchorLink, index){
 			$('.full-page-wrap.active [data-aos]').addClass("aos-animate");
-			// console.log($(window).scrollTop())
-			
 			if(index === $('#fullpage .full-page-wrap').length){
-				
 				$(window).on('scroll' , function(){
 					var wt = $(window).scrollTop()
 					if( wt == 0){

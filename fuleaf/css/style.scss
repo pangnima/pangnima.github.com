@@ -15,7 +15,6 @@ fieldset,img {max-width:100%; border:0;}
 button,input,optgroup,select,textarea {margin:0; padding:0; line-height:1.15; font-family:inherit; font-size:100%;}
 button,[type="button"],[type=reset],[type=submit] {-webkit-appearance:button;}
 button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner {padding:0; border-style:none;}
-#virtual_dom{font-size:94px; display: inline-block;}
 .blind {display:block; overflow:hidden; position:absolute; top:0; left:0; background:0 0; width:0; height:0; border:0; line-height:0; font-size:0;}
 #fp-nav ul li:nth-child(4) {position: absolute; left:-999999em;}
 $vw-viewport: 1680;
@@ -24,6 +23,7 @@ $vw-viewport: 1680;
 	@return $font / $vw-context * 1vw;
 	@return $font;
 }
+#virtual_dom{font-size:vw(94px); display: inline-block;}
 html,body {
 	font-family: 'Noto Sans KR', sans-serif;
     -ms-overflow-style: none; /* IE and Edge */
@@ -59,9 +59,10 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 #blinker{
     -webkit-animation: blink 1s step-end infinite;
 	animation: blink 1s step-end infinite;
-	border:solid 3px #00b564;display:inline-block;position:relative;vertical-align:top;margin:0 12px;transform:translateY(30%);display:inline-block;
+	border:solid 3px #00b564; display:inline-block; position:relative; vertical-align:top; margin:0 vw(12px); transform:translateY(30%); display:inline-block;
 	border-radius: 6px;
 	height:vw(86px);
+	width:0;
 }
 @keyframes blink {
     from, to { opacity: 0; }
@@ -78,7 +79,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 	height:100vh; position:relative;
 	.fp-tableCell{
 		display:flex; justify-content:center; align-items:center;
-		.page-contents{width:100%; max-width:1680px; padding:0 150px; box-sizing:border-box; position: relative;
+		.page-contents{width:100%; max-width:vw(1680px); padding:0 vw(320px); box-sizing:border-box; position: relative;
 			&.wide{padding:0 0 150px 0;}
 		}
 	}
@@ -90,7 +91,8 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 			.search-wrap{
 				margin-top:30px;font-weight:bold;font-size:vw(94px);line-height:1.45;letter-spacing:-4.7px;
 				.typer {
-					width:100px;padding:0 10px;border:0;box-sizing:border-box;color:#999;font-size:vw(94px);font-weight:bold;outline:none;
+					width:0px;
+					padding:0 10px; border:0; box-sizing:border-box; color:#999; font-size:vw(94px); font-weight:bold; outline:none;
 					&::-webkit-input-placeholder{color:#d4d4d4;}
 					&::-moz-placeholder{color:#d4d4d4;}
 					&:-ms-input-placeholder{color:#d4d4d4;}
@@ -102,10 +104,10 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					&:after {
 						content: "";
 						position: absolute;
-						top: 25px;
+						top:vw(25px);
 						background: url(../images/link.png) 50% 50% no-repeat;
-						width: 64px;
-						height: 64px;
+						width:vw(64px);
+						height:vw(64px);
 						background-size: cover;
 					}
 				}
@@ -146,8 +148,10 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 		.filter-wrap{
 			margin-top:vw(50px);
 			.depth-slide{
-				max-width:1680px;overflow:hidden;
+				max-width:vw(1680px);overflow:hidden;
+				.swiper-slide {width:100% !important;}
 				.swiper-slide-active{
+					width:100% !important;
 					-webkit-animation:opacity 3s forwards;
 						animation:opacity 3s forwards;
 				}
@@ -302,7 +306,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 			}
 
 			.magazine-img {
-				max-width:vw(480px); margin-left:vw(80px);
+				margin-left:vw(80px);
 				.magazine-link {
 					position: absolute;
 					top:27px; right:27px;
@@ -318,12 +322,14 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					&:before{
 						content: "";
 						display: block;
-						background: url(../images/arrow_w.png) 0 0 no-repeat;
-						margin-bottom:7px;
-						width:28px; height:28px;
+						background: url(../images/arrow_w.png) 50% 50% no-repeat;
+						background-size:100% 100%;
+						margin-bottom:vw(7px);
+						width:vw(28px); height:vw(28px);
+						font:0/0 a; 
 					}
 				}
-				img {width:100%;height:100%;vertical-align:top;}
+				img {height:100%;vertical-align:top;}
 			}
 		}
 
@@ -434,21 +440,22 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 			display:flex;
 			justify-content:space-between;
 			margin:0 auto;
-			max-width:1680px;
+			max-width:vw(1680px);
 			box-sizing:border-box;
 			padding:0 vw(150px);
 		}
 		.title {
 			display:block;
 			font-family:Montserrat; font-size:vw(72px); font-weight:bold; line-height:1.22; color:#000; margin-top:vw(50px);
-			&.kr {font-family: 'Noto Sans KR', sans-serif;}
+			span{display:block; vertical-align:top;}
+			&.kr{font-family:"Noto Sans KR", sans-serif;}
 		}
 		.sub-title {
 			font-family: Montserrat;
 			font-size: vw(22px);
 			font-weight: bold;
 			line-height: 1.23;
-			&.kr {font-family: 'Noto Sans KR', sans-serif;}
+			&.kr{font-family:"Noto Sans KR", sans-serif;}
 		}
 		.sub-text{
 			font-size:vw(20px);
@@ -567,16 +574,8 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 			background: #fafaf8;
 			.action-box{
 				position: relative;width: 100%;
+				background: rgba(0, 0, 0, 0.2);
 				&.active{
-					.action-bg{
-						-webkit-animation: action 4.5s forwards;
-						        animation: action 4.5s forwards;
-					}
-					.dim{
-						-webkit-animation: dim 2s forwards;
-						        animation: dim 2s forwards;
-					}
-
 					.action-logo{
 						-webkit-animation: logo 4s steps(60) forwards;
 						animation: logo 4s steps(60) forwards;
@@ -602,48 +601,6 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					-webkit-animation-play-state: paused;
 							animation-play-state: paused;
 					}
-				}
-
-				@-webkit-keyframes dim {
-					from{z-index: 0;}
-					to{z-index: 100;}
-				}
-
-				@keyframes dim {
-					from{z-index: 0; opacity: 0;}
-					to{z-index: 10; opacity: 0.5;}
-				}
-
-				@-webkit-keyframes action {
-					0%{	transform: scale(1.2) translateY(110px); opacity: 0;}
-					15%{transform: scale(1) translateY(0); opacity: 1;}
-					25%{transform: scale(1) translateY(0); height:400px; opacity: 1;}
-					40%{transform: scale(1) translateY(0); height:400px; opacity: 1;}
-					50%{transform: scale(1) translateY(0); height:400px; background-position-y: 60%; opacity: 1;}
-					60%{transform: scale(1) translateY(0); height:400px; background-position-y: 70%; opacity: 1;}
-					70%{transform: scale(1) translateY(0); height:400px; background-position-y: 80%; opacity: 1;}
-					80%{transform: scale(1) translateY(0); height:400px; background-position-y: 90%; opacity: 1;}
-					100%{transform: scale(1) translateY(0); height:400px; background-position-y:100%; opacity: 1;}
-				}
-
-				@keyframes action {
-					0%{	transform: scale(1.2) translateY(110px); opacity: 0;}
-					15%{transform: scale(1) translateY(0); opacity: 1;}
-					25%{transform: scale(1) translateY(0); height:400px;}
-					40%{transform: scale(1) translateY(0); height:400px;}
-					50%{transform: scale(1) translateY(0); height:400px; background-position-y: 60%; opacity: 1;}
-					60%{transform: scale(1) translateY(0); height:400px; background-position-y: 70%; opacity: 1;}
-					70%{transform: scale(1) translateY(0); height:400px; background-position-y: 80%; opacity: 1;}
-					80%{transform: scale(1) translateY(0); height:400px; background-position-y: 90%; opacity: 1;}
-					100%{transform: scale(1) translateY(0); height:400px; background-position-y:100%; opacity: 1;}
-				}
-
-				.dim{
-					position: absolute;
-					top:0;
-					width: 100%; height:100%;
-					background: #000;
-					opacity: 0;
 				}
 				@-webkit-keyframes logo{
 				100% { background-position:50% -37800px}
@@ -675,7 +632,8 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 
 		.make{padding:vw(90px) 0 vw(160px);
 			background: #fff;
-			max-width: 1660px; margin:0 auto;
+		
+			 margin:0 auto;
 			box-sizing: border-box;
 			.contents-box{display: block;}
 			.title {
@@ -713,15 +671,22 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 		@return $font / $vw-context * 1vw;
 		@return $font;
 	}
-	#blinker {height:vw(86px);}
+	#blinker {height:vw(86px); margin:0 vw(12px)}
+	#virtual_dom{font-size:vw(94px);}
 	#fp-nav{
 		&.left{
 			left:25px;
-			ul li a {width:5px; height:5px;
-				span {width:5px; height:5px; border-radius: 50%;
-					&:hover, &:focus{width:5px; height:5px; border-radius: 50%;}
+			ul li {
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				a {width:5px; height:5px;
+					min-width: 5px;
+					span {width:5px; height:5px; border-radius: 50%; border: 0;
+						&:hover, &:focus{width:5px; height:5px; border-radius: 50%;}
+					}
 				}
-			}
+			} 
 			.fp-tooltip{display: none;}
 		}
 	}
@@ -740,16 +705,50 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 				}
 				// 필터
 				.filter-box {
-					.filter-wrap .depth-slide .filter-item-box .filter-item{
-						padding:0 vw(30px); font-size:vw(30px);
-						height:vw(60px); line-height:vw(54px);
+					.filter-wrap .depth-slide .filter-item-box {
+						.btn-prev{
+							box-sizing:border-box;
+							width:vw(70px);height:vw(60px);
+							background-size:12px 17px;
+							margin-right:vw(8px);
+						}
+						.filter-item{
+							padding:0 vw(30px); font-size:vw(30px);
+							height:vw(60px); line-height:vw(54px);
+						}
+						.btn-search{
+							padding:0 vw(30px);
+							line-height:vw(60px);
+							height:vw(60px);
+							cursor:pointer;
+							button{border:0;
+								font-size:vw(30px);
+								&:after{
+									margin-left:vw(11px);
+								}
+							}
+						}
 					}
 				}
 
 				.magazine-box{
 					display:flex;width:100%;padding:0 50px;box-sizing:border-box;flex-direction:column-reverse;
-					.magazine-img{width:300px; max-width:100%; margin:0 auto;}
+					.magazine-img{width:300px; max-width:100%; margin:0 auto;
+						flex:0 0 100%;
+						max-width: 100%;
+						.magazine-link {
+							top:vw(27px); right:vw(27px);
+							&:before{
+								content: "";
+								margin-bottom:vw(7px);
+								width:vw(28px); height:vw(28px);
+								font:0/0 a; 
+							}
+						}
+					}
 					.magazine-info{
+						flex:0 0 100%;
+						max-width: 100%;
 						h2{text-align: center; margin-top:vw(24px); font-size:vw(46px); }
 						dl{
 							margin-top:40px;
@@ -761,6 +760,10 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 							text-align: center;
 							justify-content: center;
 						}
+					}
+					.magazine-img {
+						.magazine-link{font:0/0 a; border:0;}
+						img{height: auto;}
 					}
 	
 				}
@@ -844,6 +847,8 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 		@return $font / $vw-context * 1vw;
 		@return $font;
 	}
+	#virtual_dom{font-size:vw(42px);}
+	#blinker {margin:0 vw(12px)}
 
 	.full-page-wrap{
 		.fp-tableCell {
@@ -852,14 +857,18 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 			.page-contents{
 				padding:0;
 				.title-wrap{
-					font-size:vw(54px);
-					display: block;
+					font-size:vw(54px); display:block;
+					.select-text {
+						display: inline-block;
+					}
 					.text-slide{display: block;}
 				}
 
-				.search-box .search-wrap .typer{max-width: 100px;}
+				// .search-box .search-wrap .typer{max-width: 100px;}
 
 				.filter-box{
+					padding:0;
+					max-width: 100%;
 					.filter-wrap{margin-top:vw(32px);
 						.depth-slide .filter-item-box {
 							.btn-prev{
@@ -882,6 +891,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 								line-height:vw(60px);
 								height:vw(60px);
 								button{
+									font-size:vw(30px);
 									&:after{
 										background-size:100% 100%;
 										width:vw(23px); height:vw(22px);
@@ -908,10 +918,18 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 								font-weight: bold;
 								line-height: 1.4;
 								letter-spacing: -0.75px;}
-							dt{font-size:15px;
+							dd{font-size:15px;
 								line-height: 1.53;
 								letter-spacing: -0.75px;
-								color: #000000;}
+								color: #000000;
+								
+								/* 여러 줄 자르기 추가 스타일 */ 
+								white-space: normal; 
+								word-wrap: break-word; 
+								display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+								overflow: hidden;
+
+							}
 						}
 						.writer-info{
 							font-size:14px;
@@ -923,9 +941,17 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 						}
 					}
 
-					.magazine-img {
-						max-width: 100%;
-						width: 100%;
+					.magazine-img{width:100%; max-width:66%;
+						.magazine-link {
+							top:vw(27px); right:vw(27px);
+							&:before{
+								content: "";
+								margin-bottom:vw(7px);
+								width:vw(28px); height:vw(28px);
+								font:0/0 a; 
+							}
+						}
+						img {height: auto;}
 					}
 				}
 
@@ -935,7 +961,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 						span {display: block;}
 						&:after{
 							position: absolute;
-							right:90px;
+							right:vw(90px);
 							top:20px;
 							width:36px; height:36px;
 							background-size:100% 100%;
@@ -968,21 +994,11 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 
 	.over-page {
 		.scroll-page {
-			.title{
-				font-family: Montserrat;
-				font-size: 54px;
-				font-weight: bold;
-				line-height: 1.22;
+			.title{line-height:1.22; font-family:Montserrat; font-size:54px; font-weight:bold;
+				span{display:block;}
 			}
-			.sub-title{font-size:16px;
-				font-weight: bold;
-				line-height: 1.5;
-				letter-spacing: -0.48px;
-			}
-			.sub-text {font-size:16px;
-				line-height: 1.5;
-				letter-spacing: -0.8px;
-			}
+			.sub-title{line-height:1.5; letter-spacing:-.48px; font-size:16px; font-weight:bold;}
+			.sub-text{margin-top:14px;line-height:1.5; letter-spacing:-.8px; font-size:16px; word-break:keep-all;}
 
 
 			.believe{
@@ -991,7 +1007,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					overflow: visible;
 					flex-wrap: wrap;
 					// padding-bottom: vw(220px);
-					.left-box{flex:0 0 100%;}
+					.left-box{flex:0 0 75%;}
 					.right-box{
 						margin-left: 0;
 						max-width: 100vw;
@@ -999,8 +1015,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 						flex: 0 0 100%;
 						// transform: translateY(50%);
 						.sub-title,.title{display: none;}
-
-						.img-box{max-width: 100vw; max-height: 100vw;margin: 0;}
+						.img-box{max-width:100vw; max-height:100vw;}
 					}
 				}
 			}
@@ -1010,17 +1025,15 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					position: relative;
 					overflow: visible;
 					flex-wrap: wrap;
-					.left-box{flex:0 0 100%; max-width: 100%;}
+					.left-box{flex:0 0 80%; max-width: 100%;}
 					.right-box{
 						margin-left: 0;
 						max-width: 100vw;
 						max-height: 100vw;
 						flex: 0 0 100%;
-						// .sub-title,.title{display: none;}
-
 						.img-box{max-width: 100vw; max-height: 100vw;margin: 0;
 							&.mission-img-3 {max-width: 100vw; max-height:100vw;
-							background-size:cover;
+								background-size:cover;
 							}
 						}
 					}
@@ -1031,8 +1044,9 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 				.contents-box{
 					margin-top:vw(120px);
 					.essence-list{
-						li {flex:0 0 100%; border-top:0;
+						li {flex:0 0 100%; 
 							padding:vw(40px) 0;
+							border-top: 0;
 							&:first-child{border-top:solid 1px #707070;}
 							h3 {font-size:36px;}
 							dl{
@@ -1102,13 +1116,10 @@ html::-webkit-scrollbar,body::-webkit-scrollbar {
 					.title{
 						font-size: 36px;
 						font-weight: bold;
-						font-stretch: normal;
-						font-style: normal;
 						line-height: 1.33;
 						letter-spacing: -1.8px;
-						text-align: left;
-						color: #000000;
 					}
+					.bg-make h3{font-size:26px;}
 				}
 			}
 		}
